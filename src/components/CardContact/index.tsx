@@ -31,9 +31,11 @@ export function CardContact() {
         </div>
         <CardContactContent>
           <div className="description">
-            <h2>{currentLang === 'ta' ? 'நாம் பேசலாம்!' : 'Lets talk!'}</h2>
+            <h2>{currentLang === 'ta' ? 'আসুন কথা বলি!' : 'Let\'s talk!'}</h2>
             <p>
-              {currentLang === 'ta' ? 'உங்களுக்கு கேள்விகள் இருந்தால் அல்லது வணக்கம் சொல்ல விரும்பினால், தயவுசெய்து என்னை தொடர்பு கொள்ளுங்கள். நான் விரைவில் உங்களுக்கு பதிலளிக்க முயற்சிப்பேன்!' : 'If you have questions or would just like to say hello, please contact me. I will do my best to get back to you as soon as possible!'}
+              {currentLang === 'ta' ? 
+              'আপনার যদি কোন প্রশ্ন থাকে বা শুধু হ্যালো বলতে চান, অনুগ্রহ করে আমার সাথে যোগাযোগ করুন। আমি যত তাড়াতাড়ি সম্ভব আপনাকে জবাব দেওয়ার চেষ্টা করব!' : 
+              'If you have questions or would just like to say hello, please contact me. I will do my best to get back to you as soon as possible!'}
             </p>
           </div>
 
@@ -42,7 +44,7 @@ export function CardContact() {
               width={480} 
               height={500} 
               src="/contact.svg" 
-              alt="imagem de contato" 
+              alt="contact image" 
               loading="lazy"
             />
           </div>
@@ -50,7 +52,7 @@ export function CardContact() {
 
         <Link href={'/contact'} legacyBehavior>
           <ButtonAlt>
-            {currentLang === 'ta' ? 'என்னை தொடர்பு கொள்ளுங்கள்' : 'Contact Me'}{' '}
+            {currentLang === 'ta' ? 'আমার সাথে যোগাযোগ করুন' : 'Contact Me'}{' '}
             <TelegramLogo
               style={{
                 marginBottom: '-0.1rem',
@@ -61,11 +63,11 @@ export function CardContact() {
             />
           </ButtonAlt>
         </Link>
-        <Link href="https://forms.visme.co/formsPlayer/kkjne993-saravana-039-s-portfolio" legacyBehavior>
+        <Link href="mailto:masudrm50@gmail.com" legacyBehavior>
           <ButtonSecondary style={{
             marginTop: '1rem',
           }}>
-            {currentLang === 'ta' ? 'கருத்துக்களை எழுதுங்கள்' : 'Write a feedback'}{' '}
+            {currentLang === 'ta' ? 'ইমেইল করুন' : 'Send Email'}{' '}
             <Pen
               style={{
                 marginBottom: '-0.1rem',
