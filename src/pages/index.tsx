@@ -42,7 +42,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>{currentLang === 'ta' ? 'சரவணகுமாரின் போர்ட்ஃபோலியோ' : ' Saravanakumar\'s Portfolio'} </title>
+        <title>{currentLang === 'ta' ? 'சரவணகுமாரின் போர்ட்ஃபோலியோ' : ' Masud Rana\'s Portfolio'} </title>
       </Head>
       <ScrollTop />
       <Section>
@@ -78,4 +78,5 @@ export const getStaticProps: GetStaticProps = async ({ locale = 'en' }) => ({
   props: {
     ...(await serverSideTranslations(locale, ['common'])),
   },
+
 });
