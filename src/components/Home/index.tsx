@@ -118,7 +118,7 @@ export function HomeHero() {
             <span>👋🏻</span> {currentLang === 'ta' ? 'வணக்கம், எனது பெயர்' : 'Hello, my name is'}
           </p>
           <h1>
-            {currentLang === 'ta' ? 'சரவணகுமார் ரா' : 'Masud Rana'}
+            {currentLang === 'ta' ? 'মাসুদ রানা' : 'Md. Masud Rana'}
             <span className="animation">
               <Image
                 width={200}
@@ -132,7 +132,11 @@ export function HomeHero() {
           <h2>
             <Typewriter
               options={{
-                strings: [currentLang === 'ta' ? 'டெவலப்பர் | பேச்சாளர் | தன்னார்வலர்' : 'Developer | Speaker | Volunteer'],
+                strings: [
+                  currentLang === 'ta' ? 
+                  'ব্যবস্থাপনা স্নাতক | ব্র্যান্ড প্রতিনিধি | দলনেতা' : 
+                  'Management Graduate | Brand Representative | Team Leader'
+                ],
                 autoStart: true,
                 loop: true,
               }}
@@ -142,15 +146,10 @@ export function HomeHero() {
           <div className="button">
             <Link legacyBehavior href="#projects">
               <ButtonPrimary>
-                <b>{currentLang === 'ta' ? 'திட்டங்களைக் காண்க' : 'See Portfolio'}</b>
+                <b>{currentLang === 'ta' ? 'প্রকল্পগুলি দেখুন' : 'See Portfolio'}</b>
                 <FiArrowRight style={{ marginBottom: '-0.3rem' }} size={20} />
               </ButtonPrimary>
             </Link>
-
-            {/* <ButtonPrimary onClick={openModal2}>
-              <b>{currentLang === 'ta' ? 'அட்டை உருவாக்கவும்' : 'Generate your card'}</b>
-              <FiArrowRight style={{ marginBottom: '-0.3rem' }} size={20} />
-            </ButtonPrimary> */}
 
             <Modal
               isOpen={modalIsOpen2}
@@ -170,18 +169,18 @@ export function HomeHero() {
                   backgroundColor: '#fff',
                   borderRadius: '10px',
                   padding: '10px',
-                  width: '70%', // Adjust width for responsiveness
-                  maxWidth: '600px', // Limit the maximum width
+                  width: '70%',
+                  maxWidth: '600px',
                   height: 'auto',
                 },
               }}
             >
               <h2 style={{ textAlign: 'center', color: 'black' }}>
-                {currentLang === 'ta' ? 'அட்டை உருவாக்கவும்' : 'Generate Card'}
+                {currentLang === 'ta' ? 'বিজনেস কার্ড তৈরি করুন' : 'Generate Business Card'}
               </h2>
               <input
                 type="text"
-                placeholder={currentLang === 'ta' ? 'உங்கள் பெயரை உள்ளிடவும்' : 'Enter your name'}
+                placeholder={currentLang === 'ta' ? 'আপনার নাম লিখুন' : 'Enter your name'}
                 value={userName}
                 onChange={(e) => setUserName(e.target.value)}
                 style={{
@@ -234,14 +233,16 @@ export function HomeHero() {
                             loading="lazy"
                           />
                         </Logo>
-                        <span>DEV CARD</span>
+                        <span>BUSINESS CARD</span>
                       </header>
                       <Announcement>
-                        <h3>Yo! </h3>
+                        <h3>Contact: </h3>
                         <h1>{userName || 'Error'}</h1>
-                        <h3 className="italic">thanks for stopping by my world</h3>
+                        <h3 className="italic">Management Graduate | Jagannath University</h3>
+                        <p>Phone: +8801308-202656</p>
+                        <p>Email: masudrm50@gmail.com</p>
                       </Announcement>
-                      <span>https://saravavana.vercel.app/</span>
+                      <span>www.linkedin.com/in/masudrana7</span>
                     </Card>
                   </Box>
                 )}
@@ -255,7 +256,7 @@ export function HomeHero() {
                   margin: '0 auto',
                   color: 'white',
                 }}>
-                  {currentLang === 'ta' ? 'பதிவிறக்கவும்' : 'Download'}
+                  {currentLang === 'ta' ? 'ডাউনলোড করুন' : 'Download'}
                 </Button>
                 <Button
                   onClick={closeModal2}
@@ -269,7 +270,7 @@ export function HomeHero() {
                     color: 'white',
                   }}
                 >
-                  {currentLang === 'ta' ? 'மூடு' : 'Close'}
+                  {currentLang === 'ta' ? 'বন্ধ করুন' : 'Close'}
                 </Button>
               </div>
             </Modal>
@@ -286,7 +287,7 @@ export function HomeHero() {
           />
         )}
         <ImgHome>
-          <img className="home-img" src="/home.png" alt={currentLang === 'ta' ? 'முகப்பு படம்' : 'Image Home'} />
+          <img className="home-img" src="/home.png" alt={currentLang === 'ta' ? 'প্রোফাইল ছবি' : 'Profile Image'} />
 
           <div className="code">
             <Image
@@ -298,8 +299,7 @@ export function HomeHero() {
             />
           </div>
         </ImgHome>
-
-      </Content >
-    </Container >
+      </Content>
+    </Container>
   )
 }
