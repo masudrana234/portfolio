@@ -35,7 +35,7 @@ export default function About() {
 
   return <>
     <Head>
-      <title>{currentLang === 'ta' ? 'பற்றி | சரவணகுமார்' : 'About | Saravanakumar'}</title>
+      <title>{currentLang === 'ta' ? 'பற்றி | சரவணகுமார்' : 'About | Masud'}</title>
       <meta
         name="description"
         content={currentLang === 'ta' ? 'நான் சரவணகுமார், வேலம்மல் பொறியியல் கல்லூரியின் மாணவர், எலக்ட்ரானிக்ஸ் மற்றும் கம்யூனிகேஷன் இன்ஜினியரிங் படித்து வருகிறேன் மற்றும் தொழில்நுட்பத்தில் ஒரு வலுவான அடித்தளத்தை உருவாக்குகிறேன்.' : 'I am Saravanakumar, a proud student of Velammal Engineering College, where I am pursuing a Bachelors degree in Electronics and Communication Engineering and building a solid foundation in technology.'}
@@ -181,4 +181,5 @@ export default function About() {
     <script src={botkey} defer></script>
     <Footer />
   </>;
+
 }
