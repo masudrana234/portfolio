@@ -26,26 +26,35 @@ export function About() {
             height={200}
             className="AboutImg"
             src="/Professional_edited.jpg"
-            alt="Saravana's Image"
+            alt="Masud Rana's Image"
             loading="lazy"
           />
         </div>
 
         <div className="aboutContent">
           <div className="aboutDescription">
-            <h2>{currentLang === 'ta' ? 'என்னைப் பற்றி சிறிது!!' : 'Little About Me!!'}</h2>
+            <h2>{currentLang === 'ta' ? 'আমার সম্পর্কে' : 'About Me'}</h2>
             <li>
-              {currentLang === 'ta' ? 'வேலம்மாள் பொறியியல் கல்லூரியில் பட்டம் பெற்ற பெருமைமிக்க பட்டதாரி, அங்குதான் நான் மின்னணுவியல் மற்றும் தகவல் தொடர்பு பொறியியலில் இளங்கலைப் பட்டம் பெற்றேன், தொழில்நுட்பத்தில் வலுவான அடித்தளத்தை அமைத்தேன்.' : 'A proud graduate of Velammal Engineering College, where I earned my Bachelor\'s degree in Electronics and Communication Engineering and laid a strong foundation in tech.'}
+              {currentLang === 'ta' ? 
+              'জগন্নাথ বিশ্ববিদ্যালয় থেকে ব্যবস্থাপনা স্টাডিজে বিএবিএ ডিগ্রি অর্জনকারী একজন উচ্চপ্রেরণাদায়ী এবং ফলাফল-ভিত্তিক পেশাদার।' : 
+              'A highly motivated and results-oriented Management Studies graduate from Jagannath University.'}
             </li>
             <li>
-              {currentLang === 'ta' ? 'இப்போது, ​​நான் நிஜ உலக தொழில்நுட்ப நிலப்பரப்பில் ஆழமாக மூழ்கி, ஒரு தீவிர டெவலப்பர், ஆர்வமுள்ள தன்னார்வலர் மற்றும் தன்னம்பிக்கை கொண்ட பொதுப் பேச்சாளராக தொடர்ந்து வளர்ந்து வரும் ஒரு பணிபுரியும் நிபுணராக இருக்கிறேன். தாக்கத்தை ஏற்படுத்த புதுமையான யோசனைகள் மற்றும் புதிய வாய்ப்புகளை ஆராய்வதில் நான் எப்போதும் ஆர்வமாக உள்ளேன்.' : 'Now, I\'m a working professional diving deeper into the real-world tech landscape, continuing to grow as an avid developer, passionate volunteer, and confident public speaker. I\'m always up for exploring innovative ideas and new opportunities to make an impact.'}
+              {currentLang === 'ta' ? 
+              'ইন্টারেক্টিভ কেয়ারে ব্র্যান্ড রিপ্রেজেন্টেটিভ হিসেবে আমার অভিজ্ঞতা রয়েছে, যেখানে আমি বিপণন কৌশল তৈরি করেছি, ১০ সদস্যের একটি দলকে নেতৃত্ব দিয়েছি এবং বিক্রয় ও জড়িততা ২০% বৃদ্ধি করেছি।' : 
+              'Experienced as a Brand Representative at Interactive Care, where I developed marketing strategies, led a team of 10, and increased sales & engagement by 20%.'}
+            </li>
+            <li>
+              {currentLang === 'ta' ? 
+              'আমার দক্ষতার মধ্যে রয়েছে ডিজিটাল মার্কেটিং, দল ব্যবস্থাপনা, এবং বিভিন্ন প্রযুক্তিগত সরঞ্জাম যেমন এমএস অফিস, অ্যাডোবি ফটোশপ, এবং ওয়েব ডেভেলপমেন্ট টুলস (HTML, CSS, JavaScript)।' : 
+              'My skills include digital marketing, team management, and various technical tools like MS Office, Adobe Photoshop, and web development tools (HTML, CSS, JavaScript).'}
             </li>
           </div>
 
           <div className='aboutButton'>
             <Link href={'/resume'}>
               <Button>
-                {currentLang === 'ta' ? 'சுயவிவரம்' : 'Resume'}
+                {currentLang === 'ta' ? 'রিজিউম' : 'Resume'}
                 <TelegramLogo
                   style={{
                     marginBottom: '-0.1rem',
@@ -58,7 +67,7 @@ export function About() {
             </Link>
             <Link href={'/about'}>
               <ButtonAlternatives>
-                {currentLang === 'ta' ? 'மேலும் வாசிக்க' : 'Read more'}
+                {currentLang === 'ta' ? 'আরও পড়ুন' : 'Read more'}
                 <ArrowRight
                   style={{
                     marginBottom: '-0.1rem',
