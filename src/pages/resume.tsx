@@ -6,7 +6,6 @@ import { CV } from '../components/CV'
 import { Description, Section, Title } from '../styles/styles'
 import { PageSection } from '../styles/resume'
 import { BsFileText } from 'react-icons/bs'
-import axios from 'axios'
 import { useTranslation } from 'react-i18next'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
@@ -27,39 +26,45 @@ export default function Resume() {
 
   const { t, i18n } = useTranslation('common');
   const router = useRouter();
-  const [currentLang, setCurrentLang] = useState<'en' | 'ta'>('en');
+  const [currentLang, setCurrentLang] = useState<'en' | 'bn'>('en');
 
   useEffect(() => {
     const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
+    setCurrentLang(locale as 'en' | 'bn');
   }, [router.locale]);
 
   return (
     <>
       <Head>
-        <title>{currentLang === 'ta' ? 'சுயவிவரம் | சரவணகுமார்' : 'Resume | Saravanakumar'}</title>
+        <title>{currentLang === 'bn' ? 'রিজিউম | মোঃ মাসুদ রানা' : 'Resume | Md. Masud Rana'}</title>
         <meta
           name="description"
-          content={currentLang === 'ta' ? 'இது எனது புதுப்பிக்கப்பட்ட சுயவிவரம், நீங்கள் அதை காணலாம் அல்லது பதிவிறக்கம் செய்யலாம்.' : 'This is my updated resume, you can see or download it.'}
+          content={currentLang === 'bn' 
+            ? 'এটি আমার আপডেট করা রিজিউম, আপনি এটি দেখতে বা ডাউনলোড করতে পারেন' 
+            : 'This is my updated resume, you can view or download it.'}
         />
-        <meta property="og:title" content={currentLang === 'ta' ? 'சுயவிவரம் | சரவணகுமார்' : 'Resume | Saravanakumar'} />
+        <meta property="og:title" content={currentLang === 'bn' ? 'রিজিউম | মোঃ মাসুদ রানা' : 'Resume | Md. Masud Rana'} />
         <meta
           property="og:description"
-          content={currentLang === 'ta' ? 'இது எனது புதுப்பிக்கப்பட்ட சுயவிவரம், நீங்கள் அதை காணலாம் அல்லது பதிவிறக்கம் செய்யலாம்.' : 'This is my updated resume, you can see or download it.'}
+          content={currentLang === 'bn' 
+            ? 'এটি আমার আপডেট করা রিজিউম, আপনি এটি দেখতে বা ডাউনলোড করতে পারেন' 
+            : 'This is my updated resume, you can view or download it.'}
         />
       </Head>
 
       <ScrollTop />
       <Section>
         <Title>
-          <p>../{currentLang === 'ta' ? 'சுயவிவரம்' : 'curriculum'}</p>
-          {currentLang === 'ta' ? 'சுயவிவரம்' : 'Curriculum Vitae'}
+          <p>../{currentLang === 'bn' ? 'রিজিউম' : 'resume'}</p>
+          {currentLang === 'bn' ? 'পেশাদার রিজিউম' : 'Professional Resume'}
           <span>
-            <BsFileText /> {currentLang === 'ta' ? 'சுயவிவரம்' : 'Resume'}
+            <BsFileText /> {currentLang === 'bn' ? 'রিজিউম' : 'Resume'}
           </span>
         </Title>
         <Description style={{width:'100%', textAlign: 'center', marginBottom: '1px'}}>
-          {currentLang === 'ta' ? 'இது எனது புதுப்பிக்கப்பட்ட சுயவிவரம், Canva இணையதளத்தால் இயக்கப்படுகிறது. கீழே உள்ள பதிவிறக்க பொத்தானைக் கிளிக் செய்வதன் மூலம் எனது தொழில்முறை சுயவிவரத்தை நீங்கள் பதிவிறக்கம் செய்யலாம்.' : 'This is my updated resume, powered by Canva website. You can download my professional resume by clicking on the download button below.'}
+          {currentLang === 'bn' 
+            ? 'এটি আমার আপডেট করা পেশাদার রিজিউম, Canva ওয়েবসাইট দ্বারা চালিত। নীচের ডাউনলোড বাটনে ক্লিক করে আপনি আমার রিজিউম ডাউনলোড করতে পারেন।' 
+            : 'This is my updated professional resume, powered by Canva. You can download my resume by clicking the download button below.'}
         </Description>
 
         <PageSection>
@@ -68,7 +73,7 @@ export default function Resume() {
             allowFullScreen
             width="740"
             height="780"
-            title="Saravanakumar Resume"
+            title={currentLang === 'bn' ? 'মোঃ মাসুদ রানার রিজিউম' : 'Md. Masud Rana Resume'}
           />
 
           <CV />
