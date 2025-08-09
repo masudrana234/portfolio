@@ -29,32 +29,40 @@ export default function Experience() {
   const [query, setQuery] = useState("");
   const { t, i18n } = useTranslation('common');
   const router = useRouter();
-  const [currentLang, setCurrentLang] = useState<'en' | 'ta'>('en');
+  const [currentLang, setCurrentLang] = useState<'en' | 'bn'>('en');
 
   useEffect(() => {
     const { locale } = router;
-    setCurrentLang(locale as 'en' | 'ta');
+    setCurrentLang(locale as 'en' | 'bn');
   }, [router.locale]);
 
   return (
     <div>
       <Head>
-        <title>{currentLang === 'ta' ? 'அனுபவம் | சரவணகுமார்' : 'Experience | Saravanakumar'}</title>
+        <title>{currentLang === 'bn' ? 'অভিজ্ঞতা | মোঃ মাসুদ রানা' : 'Experience | Md. Masud Rana'}</title>
+        <meta 
+          name="description" 
+          content={currentLang === 'bn' 
+            ? 'আমার পেশাদার অভিজ্ঞতা এবং যোগ্যতা দেখুন' 
+            : 'View my professional experience and qualifications'}
+        />
       </Head>
 
       <ScrollTop />
       <Section>
         <Title>
-          <p>../{currentLang === 'ta' ? 'அனுபவம்' : 'experience'}</p>
-          {currentLang === 'ta' ? 'அனுபவம்' : 'Experience'}
+          <p>../{currentLang === 'bn' ? 'অভিজ্ঞতা' : 'experience'}</p>
+          {currentLang === 'bn' ? 'পেশাদার অভিজ্ঞতা' : 'Professional Experience'}
           <span>
-            <Briefcase /> {currentLang === 'ta' ? 'வேலை' : 'Work'}
+            <Briefcase /> {currentLang === 'bn' ? 'কাজ' : 'Work'}
           </span>
         </Title>
 
         <Description>
           <p>
-            {currentLang === 'ta' ? 'நான் 2 ஆண்டுகளுக்கும் மேலாக டெவலப்பராக பணியாற்றி வருகிறேன். நான் சிறிய அளவிலிருந்து பெரிய அளவிலான பல திட்டங்களில் பணியாற்றியுள்ளேன், மேலும் பல்வேறு தொழில்நுட்பங்களுடன் பணியாற்றும் அனுபவம் எனக்கு உள்ளது.' : 'I have been working as a developer for over 2 years. I have worked on many projects, from small to large scale, and I have experience working with many different technologies.'}
+            {currentLang === 'bn' 
+              ? 'আমি একজন ব্র্যান্ড প্রতিনিধি হিসেবে কাজ করেছি যেখানে আমি ১০ সদস্যের একটি দলকে নেতৃত্ব দিয়েছি এবং বিক্রয় ২০% বৃদ্ধি করেছি। আমার ব্যবস্থাপনা এবং বিপণন কৌশল সম্পর্কে অভিজ্ঞতা রয়েছে।'
+              : 'I have worked as a Brand Representative where I led a team of 10 and increased sales by 20%. I have experience in management and marketing strategies.'}
           </p>
         </Description>
 
@@ -128,12 +136,12 @@ export default function Experience() {
                       className="links"
                     >
                       <a href={exp.link} target="_blank" rel="noreferrer">
-                        <Button>{currentLang === 'ta' ? 'அறிக்கையைப் பார்க்கவும்' : 'View Report'}</Button>
+                        <Button>{currentLang === 'bn' ? 'রিপোর্ট দেখুন' : 'View Report'}</Button>
                       </a>
                     </div>
 
                     <div className="techs">
-                      <h3>{currentLang === 'ta' ? 'தொழில்நுட்பங்கள்:' : 'Techs:'}</h3>
+                      <h3>{currentLang === 'bn' ? 'দক্ষতা:' : 'Skills:'}</h3>
                       <ul>
                         {exp.tags.map(tag => (
                           <div className="tags" key={tag.name}>
