@@ -5,23 +5,28 @@ import { HeaderContainer, MobileIcon, NavMenu, Icons } from './styles'
 import { List, X } from 'phosphor-react'
 import { FiGithub, FiLinkedin, FiInstagram } from 'react-icons/fi'
 import { FaWhatsapp } from 'react-icons/fa'
+import { Button } from '../../styles/styles'
 import { useThemeContext } from '../../context/ThemeContext'
-import Settings from '../Settings/SettingsButton'
+import { FaSun, FaMoon } from 'react-icons/fa';
+import LanguageSwitcher from '../Language/index';
+import Settings from '../Settings/SettingsButton';
+import AudioPlayer from '../Music/AudioPlayer';
 import { useTranslation } from 'react-i18next'
 import { useRouter } from 'next/router'
 
 export function Header() {
-  const [open, setOpen] = useState(false)
-  const { currentTheme, toggleTheme } = useThemeContext()
-  const handleOpen = () => setOpen(!open)
-  const { t } = useTranslation('common')
-  const router = useRouter()
-  const [currentLang, setCurrentLang] = useState<'en' | 'ta'>('en')
-
+  const [open, setOpen] = useState(false);
+  const { currentTheme, toggleTheme } = useThemeContext(); 
+  const handleOpen = () => {
+    setOpen(!open);
+  };
+  const { t, i18n } = useTranslation('common');
+  const router = useRouter();
+  const [currentLang, setCurrentLang] = useState<'en' | 'ta'>('en');
   useEffect(() => {
-    const { locale } = router
-    setCurrentLang(locale as 'en' | 'ta')
-  }, [router.locale])
+    const { locale } = router;
+    setCurrentLang(locale as 'en' | 'ta');
+  }, [router.locale]);
 
   return (
     <HeaderContainer style={{ position: 'fixed', top: 0, width: '100%', zIndex: 1000 }}>
@@ -50,74 +55,78 @@ export function Header() {
           }
         `}</style>
         <MobileIcon onClick={handleOpen}>
-          {open ? <X size={30} weight="bold" /> : <List size={30} weight="bold" />}
+          {open ? (
+            <X size={30} weight="bold" />
+          ) : (
+            <List size={30} weight="bold" />
+          )}
         </MobileIcon>
       </div>
       <NavMenu onClick={handleOpen} open={open}>
         <ul>
           <li>
             <Link href={'/'}>
-              <span>{currentLang === 'ta' ? 'হোম' : 'Home'}</span>
+              <span>{currentLang === 'ta' ? 'முகப்பு' : 'Home'}</span>
             </Link>
           </li>
           <li>
             <Link href={'/about'}>
-              <span>{currentLang === 'ta' ? 'সম্পর্কে' : 'About'}</span>
+              <span>{currentLang === 'ta' ? 'பற்றி' : 'About'}</span>
             </Link>
           </li>
           <li>
             <Link href={'/experience'}>
-              <span>{currentLang === 'ta' ? 'অভিজ্ঞতা' : 'Experience'}</span>
+              <span>{currentLang === 'ta' ? 'அனுபவம்' : 'Experience'}</span>
             </Link>
           </li>
           <li>
             <Link href={'/blog'}>
-              <span>{currentLang === 'ta' ? 'ব্লগ' : 'Blogs'}</span>
+              <span>{currentLang === 'ta' ? 'பதிவு' : 'Blogs'}</span>
             </Link>
           </li>
           <li>
             <Link href={'/projects'}>
-              <span>{currentLang === 'ta' ? 'প্রকল্প' : 'Projects'}</span>
+              <span>{currentLang === 'ta' ? 'திட்டங்கள்' : 'Projects'}</span>
             </Link>
           </li>
           <li>
             <Link href={'/resume'}>
-              <span>{currentLang === 'ta' ? 'জীবনবৃত্তান্ত' : 'Resume'}</span>
+              <span>{currentLang === 'ta' ? 'சுயவிவரம்' : 'Resume'}</span>
             </Link>
           </li>
           <li>
             <Link href={'/contact'}>
-              <span>{currentLang === 'ta' ? 'যোগাযোগ' : 'Contact'}</span>
+              <span>{currentLang === 'ta' ? 'தொடர்பு' : 'Contact'}</span>
             </Link>
           </li>
         </ul>
         <Icons>
           <Link
-            href={'https://github.com/masud7'}
+            href={'https://github.com/Saravanakumar2003'}
             target="_blank"
-            aria-label={currentLang === 'ta' ? 'গিটহাব লিঙ্ক' : 'Link to Github'}>
+            aria-label={currentLang === 'ta' ? 'கிட்ஹப் இணைப்பு' : 'Link to Github'}>
             <FiGithub />
           </Link>
           <Link
-            href={'https://www.linkedin.com/in/masudrana7'}
+            href={'https://www.linkedin.com/in/saravanaramaswamy2003/'}
             target="_blank"
-            aria-label={currentLang === 'ta' ? 'লিংকডইন লিঙ্ক' : 'Link to Linkedin'}>
+            aria-label={currentLang === 'ta' ? 'லிங்க்டின் இணைப்பு' : 'Link to Linkedin'}>
             <FiLinkedin />
           </Link>
           <Link
-            href={'https://www.instagram.com/'}
+            href={'https://www.instagram.com/saravanakumar.me?utm_source=qr'}
             target="_blank"
-            aria-label={currentLang === 'ta' ? 'ইনস্টাগ্রাম' : 'Instagram'}>
+            aria-label={currentLang === 'ta' ? 'இன்ஸ்டாகிராம்' : 'Instagram'}>
             <FiInstagram />
           </Link>
           <Link
-            href={'https://api.whatsapp.com/send?phone=8801308202656'}
+            href={'https://api.whatsapp.com/send?phone=918838416187'}
             target="_blank"
-            aria-label={currentLang === 'ta' ? 'হোয়াটসঅ্যাপে যোগাযোগ করুন' : 'Link to contact via WhatsApp'}>
+            aria-label={currentLang === 'ta' ? 'வாட்ஸ்அப் மூலம் தொடர்பு கொள்ள' : 'Link to contact via WhatsApp'}>
             <FaWhatsapp />
           </Link>
         </Icons>
       </NavMenu>
     </HeaderContainer>
-  )
+  );
 }
