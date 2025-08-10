@@ -118,7 +118,7 @@ export function HomeHero() {
             <span>👋🏻</span> {currentLang === 'ta' ? 'হ্যালো, আমার নাম' : 'Hello, my name is'}
           </p>
           <h1>
-            {currentLang === 'ta' ? 'মাসুদ রানা' : 'Masud Rana'}
+            {currentLang === 'ta' ? 'মো: মাসুদ রানা' : 'Md. Masud Rana'}
             <span className="animation">
               <Image
                 width={200}
