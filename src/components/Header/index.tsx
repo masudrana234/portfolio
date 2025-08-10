@@ -41,7 +41,7 @@ export function Header() {
               alt="logo"
             />
           </div>
-          {'Masud Rana'}
+          {'Saravanakumar'}
         </Link>
         <div className="settings">
           <Settings toggleTheme={toggleTheme} currentTheme={currentTheme} />
@@ -66,63 +66,63 @@ export function Header() {
         <ul>
           <li>
             <Link href={'/'}>
-              <span>{currentLang === 'ta' ? 'হোম' : 'Home'}</span>
+              <span>{currentLang === 'ta' ? 'முகப்பு' : 'Home'}</span>
             </Link>
           </li>
           <li>
             <Link href={'/about'}>
-              <span>{currentLang === 'ta' ? 'সম্পর্কে' : 'About'}</span>
+              <span>{currentLang === 'ta' ? 'பற்றி' : 'About'}</span>
             </Link>
           </li>
           <li>
             <Link href={'/experience'}>
-              <span>{currentLang === 'ta' ? 'অভিজ্ঞতা' : 'Experience'}</span>
+              <span>{currentLang === 'ta' ? 'அனுபவம்' : 'Experience'}</span>
             </Link>
           </li>
           <li>
             <Link href={'/blog'}>
-              <span>{currentLang === 'ta' ? 'ব্লগ' : 'Blogs'}</span>
+              <span>{currentLang === 'ta' ? 'பதிவு' : 'Blogs'}</span>
             </Link>
           </li>
           <li>
             <Link href={'/projects'}>
-              <span>{currentLang === 'ta' ? 'প্রকল্প' : 'Projects'}</span>
+              <span>{currentLang === 'ta' ? 'திட்டங்கள்' : 'Projects'}</span>
             </Link>
           </li>
           <li>
             <Link href={'/resume'}>
-              <span>{currentLang === 'ta' ? 'জীবনবৃত্তান্ত' : 'Resume'}</span>
+              <span>{currentLang === 'ta' ? 'சுயவிவரம்' : 'Resume'}</span>
             </Link>
           </li>
           <li>
             <Link href={'/contact'}>
-              <span>{currentLang === 'ta' ? 'যোগাযোগ' : 'Contact'}</span>
+              <span>{currentLang === 'ta' ? 'தொடர்பு' : 'Contact'}</span>
             </Link>
           </li>
         </ul>
         <Icons>
           <Link
-            href={'https://github.com/masudrana234'}
+            href={'https://github.com/Saravanakumar2003'}
             target="_blank"
-            aria-label={currentLang === 'ta' ? 'গিটহাব লিঙ্ক' : 'Link to Github'}>
+            aria-label={currentLang === 'ta' ? 'கிட்ஹப் இணைப்பு' : 'Link to Github'}>
             <FiGithub />
           </Link>
           <Link
-            href={'https://www.linkedin.com/in/masudrana7/'}
+            href={'https://www.linkedin.com/in/saravanaramaswamy2003/'}
             target="_blank"
-            aria-label={currentLang === 'ta' ? 'লিংকডইন লিঙ্ক' : 'Link to Linkedin'}>
+            aria-label={currentLang === 'ta' ? 'லிங்க்டின் இணைப்பு' : 'Link to Linkedin'}>
             <FiLinkedin />
           </Link>
           <Link
-            href={'https://www.instagram.com/masudrana_rm?utm_source=qr'}
+            href={'https://www.instagram.com/saravanakumar.me?utm_source=qr'}
             target="_blank"
-            aria-label={currentLang === 'ta' ? 'ইনস্টাগ্রাম' : 'Instagram'}>
+            aria-label={currentLang === 'ta' ? 'இன்ஸ்டாகிராம்' : 'Instagram'}>
             <FiInstagram />
           </Link>
           <Link
-            href={'https://api.whatsapp.com/send?phone=8801308202656'}
+            href={'https://api.whatsapp.com/send?phone=918838416187'}
             target="_blank"
-            aria-label={currentLang === 'ta' ? হোয়াটসঅ্যাপে যোগাযোগ করুন' : 'Link to contact via WhatsApp'}>
+            aria-label={currentLang === 'ta' ? 'வாட்ஸ்அப் மூலம் தொடர்பு கொள்ள' : 'Link to contact via WhatsApp'}>
             <FaWhatsapp />
           </Link>
         </Icons>
@@ -130,4 +130,3 @@ export function Header() {
     </HeaderContainer>
   );
 }
-
