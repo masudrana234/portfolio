@@ -1,119 +1,140 @@
 const cardSkills = [
-  // Web Development
   {
     id: 1,
-    title: { en: 'HTML', ta: 'এইচটিএমএল' },
+    title: {
+      en: 'HTML',
+      ta: 'HTML',
+    },
     img: '/icons/HTML.png',
     color: '#fc4503'
   },
   {
     id: 2,
-    title: { en: 'CSS', ta: 'সিএসএস' },
+    title: {
+      en: 'CSS',
+      ta: 'CSS',
+    },
     img: '/icons/CSS.png',
     color: '#0328fc'
   },
   {
     id: 3,
-    title: { en: 'JavaScript', ta: 'জাভাস্ক্রিপ্ট' },
+    title: {
+      en: 'JavaScript',
+      ta: 'ஜாவாஸ்கிரிப்ட்',
+    },
     img: '/icons/JS.png',
     color: '#fefe01'
   },
   {
     id: 4,
-    title: { en: 'React', ta: 'রিঅ্যাক্ট' },
+    title: {
+      en: 'TypeScript',
+      ta: 'டைப்ஸ்கிரிப்ட்',
+    },
+    img: '/icons/TS.png',
+    color: '#007ACC'
+  },
+  {
+    id: 5,
+    title: {
+      en: 'React',
+      ta: 'ரியாக்ட்',
+    },
     img: '/icons/react.png',
     color: '#61DAFB'
   },
-
-  // App Development
-  {
-    id: 5,
-    title: { en: 'Android Studio', ta: 'অ্যান্ড্রয়েড স্টুডিও' },
-    img: '/icons/androidstudio.png',
-    color: '#3DDC84'
-  },
   {
     id: 6,
-    title: { en: 'Unity', ta: 'ইউনিটি' },
-    img: '/icons/unity.png',
-    color: '#000000'
+    title: {
+      en: 'Python',
+      ta: 'பைதான்',
+    },
+    img: '/icons/python.png',
+    color: '#3776AB'
   },
-
-  // Data Analysis
   {
     id: 7,
-    title: { en: 'MS Excel (Advanced)', ta: 'এমএস এক্সেল (উন্নত)' },
-    img: '/icons/excel.png',
-    color: '#217346'
+    title: {
+      en: 'C',
+      ta: 'C',
+    },
+    img: '/icons/C.png',
+    color: '#A8B9CC'
   },
   {
     id: 8,
-    title: { en: 'IBM SPSS', ta: 'আইবিএম এসপিএসএস' },
-    img: '/icons/spss.png',
-    color: '#FF6600'
+    title: {
+      en: 'Flask',
+      ta: 'பிளாஸ்க்',
+    },
+    img: '/icons/flask.jpg',
+    color: '#000000'
   },
-
-  // Design & Multimedia
   {
     id: 9,
-    title: { en: 'Adobe Photoshop', ta: 'অ্যাডোবি ফটোশপ' },
-    img: '/icons/photoshop.png',
-    color: '#31A8FF'
+    title: {
+      en: 'Firebase',
+      ta: 'பயர்பேஸ்',
+    },
+    img: '/icons/Firebase.png',
+    color: '#FFA611'
   },
   {
     id: 10,
-    title: { en: 'Canva', ta: 'ক্যানভা' },
-    img: '/icons/Canva.png',
-    color: '#00C4CC'
+    title: {
+      en: 'Github',
+      ta: 'கிட்ஹப்',
+    },
+    img: '/icons/Github.jpg',
+    color: '#ffffff'
   },
   {
     id: 11,
-    title: { en: 'Filmora', ta: 'ফিলমোরা' },
-    img: '/icons/filmora.png',
-    color: '#2CA6E0'
-  },
-
-  // Productivity
-  {
-    id: 12,
-    title: { en: 'Word', ta: 'ওয়ার্ড' },
+    title: {
+      en: 'Word',
+      ta: 'வேர்ட்',
+    },
     img: '/icons/word.png',
     color: '#2B579A'
   },
   {
-    id: 13,
-    title: { en: 'PowerPoint', ta: 'পাওয়ারপয়েন্ট' },
+    id: 12,
+    title: {
+      en: 'PowerPoint',
+      ta: 'பவர்பாயிண்ட்',
+    },
     img: '/icons/powerpoint.png',
     color: '#B7472A'
   },
-
-  // Marketing
+  {
+    id: 13,
+    title: {
+      en: 'Excel',
+      ta: 'எக்செல்',
+    },
+    img: '/icons/excel.png',
+    color: '#217346'
+  },
   {
     id: 14,
-    title: { en: 'SEO', ta: 'এসইও' },
-    img: '/icons/seo.png',
-    color: '#4285F4'
+    title: {
+      en: 'Canva',
+      ta: 'கான்வா',
+    },
+    img: '/icons/Canva.png',
+    color: '#00C4CC'
   },
   {
     id: 15,
-    title: { en: 'Blogging', ta: 'ব্লগিং' },
-    img: '/icons/blogging.png',
-    color: '#FF9900'
-  },
-  {
-    id: 16,
-    title: { en: 'Digital Marketing', ta: 'ডিজিটাল মার্কেটিং' },
-    img: '/icons/digitalmarketing.png',
-    color: '#E1306C'
-  },
-
-  // Tools
-  {
-    id: 17,
-    title: { en: 'Github', ta: 'গিটহাব' },
-    img: '/icons/Github.jpg',
-    color: '#ffffff'
+    title: {
+      en: 'Figma',
+      ta: 'பிக்மா',
+    },
+    img: '/icons/Figma.png',
+    color: '#F24E1E'
   }
 ]
+
 
 export default cardSkills
