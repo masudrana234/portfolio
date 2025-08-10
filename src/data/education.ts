@@ -1,57 +1,84 @@
 const education = [
   {
     id: 1,
-    url: 'vec',
-    img: '/education/Vec.png',
+    url: 'jnu',
+    img: '/education/jnu.png', // Replace with your JnU logo path
     title: {
-      en: 'Velammal Engineering College',
-      ta: 'வேலம்மல் பொறியியல் கல்லூரி',
+      en: 'Jagannath University',
+      ta: 'জগন্নাথ বিশ্ববিদ্যালয়',
     },
     subTitle: {
-      en: 'Bachelor of Engineering (Hons.)',
-      ta: 'பொறியியல் பட்டம் (மாண்புகள்)',
+      en: 'Bachelor of Business Administration (BBA)',
+      ta: 'ব্যাচেলর অব বিজনেস অ্যাডমিনিস্ট্রেশন (বিবিএ)',
     },
     office: {
-      en: 'Electronics and Communication Engineering',
-      ta: 'மின்னணு மற்றும் தொடர்பு பொறியியல்',
+      en: 'Management Studies',
+      ta: 'ম্যানেজমেন্ট স্টাডিজ',
     },
     description: {
-      en: 'Minor Subject: Full Stack Development (CSE dept Honours) \n\nVolunteer Roles : National Service Scheme, Member at Institution Innovation Council, Coders Club, E-Cell. \n\nCoordinator positions : Tech Team Head of National Service Scheme (2023 to 2024) and Executive Officer of Institution Innovation Council (2023 to 2025).  \n\nOraganistions : IETE (Institution of Electronics and Telecommunication Engineer).',
-      ta: 'சிறிய பாடம்: முழு ஸ்டாக் டெவலப்மெண்ட் (CSE துறை மாண்புகள்) \n\nதன்னார்வப் பணிகள் : தேசிய சேவை திட்டம், நிறுவனத்தின் புதுமை கவுன்சிலில் உறுப்பினர், கோடர்ஸ் கிளப், இ-செல். \n\nஒழுங்குபடுத்துநர் நிலைகள் : தேசிய சேவை திட்டத்தின் தொழில்நுட்ப குழு தலைவர் (2023 முதல் 2024 வரை) மற்றும் நிறுவனத்தின் புதுமை கவுன்சிலின் நிர்வாக அதிகாரி (2023 முதல் 2025 வரை). \n\nநிறுவனங்கள் : IETE (மின்னணு மற்றும் தொலைத்தொடர்பு பொறியியல் நிறுவனம்).',
+      en: 'Currently in last semester of BBA in Management Studies. \n\nExtracurricular Activities: Bangladesh National Cadet Corps (BNCC), Management Club (Associate Executive), Career Club (Creative Design & Documentation Head). \n\nIndustrial Visit: PRAN-RFL Industrial Park – gained insights into FMCG manufacturing, packaging, and logistics operations.',
+      ta: 'ম্যানেজমেন্ট স্টাডিজে বিবিএর শেষ সেমিস্টারে অধ্যয়নরত। \n\nসহপাঠ কার্যক্রম: বাংলাদেশ ন্যাশনাল ক্যাডেট কর্পস (BNCC), ম্যানেজমেন্ট ক্লাব (অ্যাসোসিয়েট এক্সিকিউটিভ), ক্যারিয়ার ক্লাব (ক্রিয়েটিভ ডিজাইন ও ডকুমেন্টেশন প্রধান)। \n\nশিল্প ভ্রমণ: প্রান-আরএফএল ইন্ডাস্ট্রিয়াল পার্ক – এফএমসিজি উৎপাদন, প্যাকেজিং ও লজিস্টিক্স কার্যক্রম সম্পর্কে জ্ঞান অর্জন।',
     },
     date: {
-      en: '24-Nov-21 to 28-April-25',
-      ta: '24-நவம்பர்-21 முதல் 28-ஏப்ரல்-25 வரை',
+      en: '2020 - Present',
+      ta: '২০২০ - বর্তমান',
     },
-    link: 'https://velammal.edu.in/',
-    link2: 'https://drive.google.com/file/d/18JS02K84fNd60m3z6KEA2jY-zt1TI-oC/view?usp=sharing',
+    link: 'https://www.jnu.ac.bd/',
+    link2: 'https://profile.jnu.ac.bd/10606',
   },
   {
     id: 2,
-    url: 'sethu',
-    img: '/education/Sethu.jpg',
+    url: 'rajshahi-college',
+    img: '/education/rajshahi.png', // Replace with Rajshahi College logo path
     title: {
-      en: 'Sethu Bhaskara Matriculation Higher Secondary School',
-      ta: 'சேது பாஸ்கரா மேட்ரிகுலேஷன் மேல்நிலைப் பள்ளி',
+      en: 'Rajshahi College',
+      ta: 'রাজশাহী কলেজ',
     },
     subTitle: {
-      en: 'LKG - 12th Grade',
-      ta: 'எல்.கே.ஜி - 12ஆம் வகுப்பு',
+      en: 'Higher Secondary Certificate (HSC)',
+      ta: 'উচ্চ মাধ্যমিক সার্টিফিকেট (এইচএসসি)',
     },
     office: {
-      en: 'Bio-Maths Group in HSC',
-      ta: 'உயிரியல்-கணிதக் குழு (மேல்நிலைப் பள்ளி)',
+      en: 'Business Studies',
+      ta: 'বিজনেস স্টাডিজ',
     },
     description: {
-      en: 'Activities and societies: Athletics, Member of the Literary Club, participant in school debates, Model United Nations, and volunteering at local community events. \n\nHSE subjects includes Maths, Physics, Chemistry, Biology, English, and Tamil.',
-      ta: 'செயல்பாடுகள் மற்றும் சங்கங்கள்: தடகளம், இலக்கியக் கிளப்பின் உறுப்பினர், பள்ளி விவாதங்களில் பங்கேற்பாளர், மாடல் ஐக்கிய நாடுகள் அமைப்பு, மற்றும் உள்ளூர் சமூக நிகழ்வுகளில் தன்னார்வமாக பங்கேற்பு. \n\nமேல்நிலைப் பள்ளி பாடங்களில் கணிதம், இயற்பியல், வேதியியல், உயிரியல், ஆங்கிலம், மற்றும் தமிழ் அடங்கும்.',
+      en: 'Completed HSC in Business Studies with GPA 5.00.',
+      ta: 'বিজনেস স্টাডিজে এইচএসসি সম্পন্ন, জিপিএ ৫.০০।',
     },
     date: {
-      en: '03-June-07 to 22-May-21',
-      ta: '03-ஜூன்-07 முதல் 22-மே-21 வரை',
+      en: '2018 - 2019',
+      ta: '২০১৮ - ২০১৯',
     },
-    link: 'https://sethubhaskara.co.in/',
-    link2: 'https://drive.google.com/file/d/1EjsZ4Lq3nNRdcazsItUIeu1PzwOAXM6w/view?usp=sharing',
+    link: 'https://rc.edu.bd/',
+    link2: '',
+  },
+  {
+    id: 3,
+    url: 'al-helal',
+    img: '/education/alhelal.png', // Replace with Al Helal logo path
+    title: {
+      en: 'Al Helal Islami Academy & College',
+      ta: 'আল হেলাল ইসলামী একাডেমি ও কলেজ',
+    },
+    subTitle: {
+      en: 'Secondary School Certificate (SSC)',
+      ta: 'মাধ্যমিক স্কুল সার্টিফিকেট (এসএসসি)',
+    },
+    office: {
+      en: 'Science',
+      ta: 'বিজ্ঞান',
+    },
+    description: {
+      en: 'Completed SSC in Science with GPA 5.00.',
+      ta: 'বিজ্ঞান বিভাগে এসএসসি সম্পন্ন, জিপিএ ৫.০০।',
+    },
+    date: {
+      en: '2016 - 2017',
+      ta: '২০১৬ - ২০১৭',
+    },
+    link: '',
+    link2: '',
   },
 ];
 
