@@ -7,17 +7,17 @@ export function Links() {
   return (
     <>
       <Icons>
-        <Link href={'https://github.com/Saravanakumar2003'}>
+        <Link href={'https://github.com/masudrana234'}>
           <a target="_blank" aria-label="Link para o Github">
             <FiGithub />
           </a>
         </Link>
-        <Link href={'https://www.linkedin.com/in/saravanaramaswamy2003/'}>
+        <Link href={'https://www.linkedin.com/in/masudrana7/'}>
           <a target="_blank" aria-label="Link para o Linkedin">
             <FiLinkedin />
           </a>
         </Link>
-        <Link href={'https://api.whatsapp.com/send?phone=918838416187'}>
+        <Link href={'https://api.whatsapp.com/send?phone=8801308202656'}>
           <a target="_blank" aria-label="Link para entrar em contato via whatsapp">
             <FaWhatsapp />
           </a>
