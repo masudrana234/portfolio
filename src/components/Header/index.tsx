@@ -115,10 +115,10 @@ export function HomeHero() {
       <Content>
         <HomeText>
           <p>
-            <span>👋🏻</span> {currentLang === 'ta' ? 'வணக்கம், எனது பெயர்' : 'Hello, my name is'}
+            <span>👋🏻</span> {currentLang === 'ta' ? 'হ্যালো, আমার নাম' : 'Hello, my name is'}
           </p>
           <h1>
-            {currentLang === 'ta' ? 'சரவணகுமார் ரா' : 'Saravanakumar R'}
+            {currentLang === 'ta' ? 'মো: মাসুদ রানা' : 'Md. Masud Rana'}
             <span className="animation">
               <Image
                 width={200}
@@ -132,7 +132,7 @@ export function HomeHero() {
           <h2>
             <Typewriter
               options={{
-                strings: [currentLang === 'ta' ? 'டெவலப்பர் | பேச்சாளர் | தன்னார்வலர்' : 'Developer | Speaker | Volunteer'],
+                strings: [currentLang === 'ta' ? 'ম্যানেজমেন্ট গ্র্যাজুয়েট | এপ/ওয়েব ডেভেলপার | তথ্য বিশ্লেষক' : 'Management Graduate | App/Web Developer | Data Analyst'],
                 autoStart: true,
                 loop: true,
               }}
@@ -303,3 +303,4 @@ export function HomeHero() {
     </Container >
   )
 }
+
