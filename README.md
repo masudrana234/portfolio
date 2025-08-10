@@ -92,7 +92,7 @@ Thank you for exploring my professional portfolio. As a management graduate with
 👤 **Md. Masud Rana**
 
 - GitHub: [@masudrana234](https://github.com/masudrana234)
-- Portfolio: [masudrana.vercel.app](https://masud3.vercel.app)
+- Portfolio: [masud7.vercel.app](https://masud3.vercel.app)
 - LinkedIn: [masudrana7](https://www.linkedin.com/in/masudrana7/)
 - Email: masudrm50@gmail.com
 - Phone: +8801760-251030
