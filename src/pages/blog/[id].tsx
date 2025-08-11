@@ -117,7 +117,7 @@ export default function BlogDetail({ htmlContent, title, date, readTime, tags, d
             <ButtonSecondary>
               <a>
                 <ArrowLeft style={{ marginBottom: '-0.2rem' }} weight="bold" size={18} />{' '}
-                {currentLang === 'bn' ? 'ফিরে যান' : 'Go Back'}
+                {currentLang === 'ta' ? 'ফিরে যান' : 'Go Back'}
               </a>
             </ButtonSecondary>
           </Link>
