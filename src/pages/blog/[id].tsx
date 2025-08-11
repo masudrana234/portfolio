@@ -31,14 +31,14 @@ export default function BlogDetail({ htmlContent, title, date, readTime, tags, d
   const router = useRouter();
   const { id } = router.query;
   const { t, i18n } = useTranslation('common');
-  const [currentLang, setCurrentLang] = useState<'en' | 'bn'>('en');
+  const [currentLang, setCurrentLang] = useState<'en' | 'ta'>('en');
   const [toc, setToc] = useState<{ id: string; text: string; level: number }[]>([]);
 
   const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const { locale } = router;
-    setCurrentLang(locale as 'en' | 'bn');
+    setCurrentLang(locale as 'en' | 'ta');
   }, [router.locale]);
 
   useEffect(() => {
@@ -74,8 +74,8 @@ export default function BlogDetail({ htmlContent, title, date, readTime, tags, d
         <TextContainer>
           <h1>{title}</h1>
           <InfoContainer>
-            <InfoItem>{currentLang === 'bn' ? 'প্রকাশের তারিখ:' : 'Date Published:'} {date}</InfoItem>
-            <InfoItem>{currentLang === 'bn' ? 'পড়ার সময়:' : 'Read Time:'} {readTime}</InfoItem>
+            <InfoItem>{currentLang === 'ta' ? 'প্রকাশের তারিখ:' : 'Date Published:'} {date}</InfoItem>
+            <InfoItem>{currentLang === 'ta' ? 'পড়ার সময়:' : 'Read Time:'} {readTime}</InfoItem>
           </InfoContainer>
           <div>
             {tags.map((tag) => (
@@ -84,7 +84,7 @@ export default function BlogDetail({ htmlContent, title, date, readTime, tags, d
           </div>
         </TextContainer>
         <TOCContainer>
-          <h2>{currentLang === 'bn' ? 'সূচিপত্র' : 'Table of Contents'}</h2>
+          <h2>{currentLang === 'ta' ? 'সূচিপত্র' : 'Table of Contents'}</h2>
           <TOCList>
             {toc.map((item) => (
               <TOCItem key={item.id} level={item.level}>
