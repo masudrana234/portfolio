@@ -1,3 +1,4 @@
+
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -10,9 +11,7 @@ import * as T from "../styles/styles";
 import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { FaSearch } from "react-icons/fa";
 import { ArrowRight } from "phosphor-react";
-import { useTranslation } from 'react-i18next';
-import { useRouter } from 'next/router';
-import { useEffect } from 'react';
+import Github from "../components/Github/Github";
 
 const botkey = process.env.NEXT_PUBLIC_BOTKEY_URL;
 
@@ -22,14 +21,6 @@ interface ProjectsProps {
 
 export default function Projects() {
   const [query, setQuery] = useState("");
-  const { t, i18n } = useTranslation('common');
-  const router = useRouter();
-  const [currentLang, setCurrentLang] = useState<'en' | 'bn'>('en');
-
-  useEffect(() => {
-    const { locale } = router;
-    setCurrentLang(locale as 'en' | 'bn');
-  }, [router.locale]);
 
   const handleChange = (e: ProjectsProps) => {
     setQuery(e.target.value);
@@ -42,46 +33,42 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>{currentLang === 'bn' ? 'প্রকল্পসমূহ | মোঃ মাসুদ রানা' : 'Projects | Md. Masud Rana'}</title>
+        <title>Projects | Saravanakumar </title>
         <meta
           name="description"
-          content={currentLang === 'bn' 
-            ? 'আমার ব্যবস্থাপনা এবং বিপণন সম্পর্কিত প্রকল্পসমূহ' 
-            : 'My management and marketing related projects'}
+          content="I love to code using tools like React, NextJS, Tailwind, Styled Components and more! Here are some of my favorite projects."
         />
-        <meta property="og:title" content={currentLang === 'bn' ? 'প্রকল্পসমূহ | মোঃ মাসুদ রানা' : 'Projects | Md. Masud Rana'} />
+        <meta property="og:title" content="Projects | Saravanakumar" />
         <meta
           property="og:description"
-          content={currentLang === 'bn' 
-            ? 'আমার ব্যবস্থাপনা এবং বিপণন সম্পর্কিত প্রকল্পসমূহ' 
-            : 'My management and marketing related projects'}
+          content="I love to code using tools like React, NextJS, Tailwind, Styled Components and more! Here are some of my favorite projects."
         />
       </Head>
 
       <ScrollTop />
       <T.Section>
         <T.Title>
-          <p>../{currentLang === 'bn' ? 'প্রকল্পসমূহ' : 'projects'}</p>
-          {currentLang === 'bn' ? 'প্রকল্পের কাজ' : 'Project Works'}
+          <p>../projects</p>
+          Project Works
           <span>
-            <HiOutlineDesktopComputer /> {currentLang === 'bn' ? 'প্রকল্পসমূহ' : 'Projects'}
+            <HiOutlineDesktopComputer /> Projects
           </span>
         </T.Title>
         <T.Description>
-          {currentLang === 'bn' 
-            ? 'এখানে আপনি আমার করা কিছু কাজ দেখতে পাবেন। প্রকল্পগুলি কীভাবে তৈরি করা হয়েছে, ব্যবহৃত প্রযুক্তি এবং বাস্তবায়িত বৈশিষ্ট্যগুলি দেখতে ব্রাউজ করুন এবং অন্বেষণ করুন।' 
-            : 'Here you can see some of the work I have done. Feel free to browse and explore the projects to see how they were created, the technologies used, and the features implemented.'}
+          Here you can see some of the work I have done. Feel free to browse and
+          explore the projects to see how they were created, the technologies
+          used, and the features implemented.
         </T.Description>
 
         <S.ProjectsContainer>
           <S.ProjectsContent>
             <div className="search">
-              <p>{currentLang === 'bn' ? 'প্রকল্পের নাম অনুসন্ধান করুন' : 'Search by project name'}</p>
+              <p>Search by project name</p>
 
               <div className="input">
                 <input
                   type="text"
-                  placeholder={currentLang === 'bn' ? 'এখানে টাইপ করুন...' : 'Type here...'}
+                  placeholder="Type here..."
                   value={query}
                   onChange={handleChange}
                 />
@@ -90,7 +77,7 @@ export default function Projects() {
             </div>
 
             {!projectFilter.length && (
-              <h3 className="not-found">{currentLang === 'bn' ? 'প্রকল্প পাওয়া যায়নি 🙁' : 'Project not found 🙁'}</h3>
+              <h3 className="not-found">Project not found 🙁</h3>
             )}
 
             {projectFilter.map((project) => {
@@ -114,9 +101,7 @@ export default function Projects() {
                       </div>
                       <div className="description">
                         <p>{project.description}</p>
-                        <h4 style={{marginBottom:"1rem"}} className="date">
-                          {currentLang === 'bn' ? 'প্রযুক্তি স্ট্যাক:' : 'Tech Stack:'}
-                        </h4>
+                        <h4 style={{marginBottom:"1rem"}} className="date">Tech Stack:</h4>
                         <div className="tags">
                           {project.tech.map((tag) => {
                             return <span key={tag.name}>{tag.name}</span>;
@@ -125,7 +110,7 @@ export default function Projects() {
                       </div>
                       <Link href={`/project/${project.url}`}>
                         <T.ButtonAlternatives>
-                          {currentLang === 'bn' ? 'প্রকল্প দেখুন' : 'View Project'}
+                          View Project
                           <ArrowRight
                             style={{
                               marginBottom: "-0.1rem",
@@ -140,21 +125,29 @@ export default function Projects() {
                 </>
               );
             })}
+
+            
           </S.ProjectsContent>
         </S.ProjectsContainer>
-
+        <T.Title>
+          <p>../github</p>
+          Github Profile
+          <span>
+            <HiOutlineDesktopComputer /> Stats
+          </span>
+        </T.Title>
+        <Github />
         <p className="github">
-          {currentLang === 'bn' 
-            ? 'আমার আরও প্রকল্প দেখুন ' 
-            : 'Check out more projects on '}
-          <a href="https://github.com/masudrana234" style={{textDecoration: 'underline'}}>
-            {currentLang === 'bn' ? 'আমার GitHub' : 'my GitHub'}
-          </a>
-          !!
+              Hey, hey... I have more projects on{" "}
+              <a href="https://github.com/Saravanakumar2003" style={{textDecoration: 'underline',}}> my GitHub </a>
+              !!
         </p>
       </T.Section>
       <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
-      <script src={botkey} defer></script>
+      <script
+        src={botkey}
+        defer
+      ></script>
       <Footer />
     </>
   );
