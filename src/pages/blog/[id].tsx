@@ -36,6 +36,8 @@ export default function BlogDetail({ htmlContent, title, date, readTime, tags, d
 
   const contentRef = useRef<HTMLDivElement>(null);
 
+  const kitkey = process.env.NEXT_PUBLIC_KITKEY_URL;
+
   useEffect(() => {
     const { locale } = router;
     setCurrentLang(locale as 'en' | 'ta');
@@ -60,13 +62,12 @@ export default function BlogDetail({ htmlContent, title, date, readTime, tags, d
     setToc(generateTOC(htmlContent));
   }, [htmlContent]);
 
-  const audioSrc = `/tts/blog${id}.mp3`;
+  const audioSrc = `/tts/blog${id}.mp3`; // Construct the audioSrc using the blog ID
 
   return (
     <>
       <Head>
-        <title>{title} | Md. Masud Rana</title>
-        <meta name="description" content={`Read ${title} by Md. Masud Rana, Management Graduate and Digital Marketer`} />
+        <title>{title}</title>
       </Head>
       <ScrollTop />
       <MainContainer>
@@ -74,8 +75,8 @@ export default function BlogDetail({ htmlContent, title, date, readTime, tags, d
         <TextContainer>
           <h1>{title}</h1>
           <InfoContainer>
-            <InfoItem>{currentLang === 'ta' ? 'প্রকাশের তারিখ:' : 'Date Published:'} {date}</InfoItem>
-            <InfoItem>{currentLang === 'ta' ? 'পড়ার সময়:' : 'Read Time:'} {readTime}</InfoItem>
+            <InfoItem>Date Published: {date}</InfoItem>
+            <InfoItem>Read Time: {readTime}</InfoItem>
           </InfoContainer>
           <div>
             {tags.map((tag) => (
@@ -84,7 +85,7 @@ export default function BlogDetail({ htmlContent, title, date, readTime, tags, d
           </div>
         </TextContainer>
         <TOCContainer>
-          <h2>{currentLang === 'ta' ? 'সূচিপত্র' : 'Table of Contents'}</h2>
+          <h2>Table of Contents</h2>
           <TOCList>
             {toc.map((item) => (
               <TOCItem key={item.id} level={item.level}>
@@ -97,17 +98,17 @@ export default function BlogDetail({ htmlContent, title, date, readTime, tags, d
         <MarkdownContainer ref={contentRef} dangerouslySetInnerHTML={{ __html: htmlContent }} />
         <GiscusContainer>
           <Giscus
-            repo="masudrana234/portfolio"
-            repoId="YOUR_REPO_ID"
+            repo="Saravanakumar2003/Portfolio"
+            repoId="R_kgDOLFzyGQ"
             category="Blog"
-            categoryId="YOUR_CATEGORY_ID"
+            categoryId="DIC_kwDOLFzyGc4Ckx5G"
             mapping="specific"
             term={`Blog Post ID: ${id}`}
             reactionsEnabled="1"
             emitMetadata="0"
             inputPosition="top"
             theme="dark"
-            lang={currentLang}
+            lang="en"
             loading="lazy"
           />
         </GiscusContainer>
@@ -117,7 +118,7 @@ export default function BlogDetail({ htmlContent, title, date, readTime, tags, d
             <ButtonSecondary>
               <a>
                 <ArrowLeft style={{ marginBottom: '-0.2rem' }} weight="bold" size={18} />{' '}
-                {currentLang === 'ta' ? 'ফিরে যান' : 'Go Back'}
+                {currentLang === 'ta' ? 'திரும்பி செல்' : 'Go Back'}
               </a>
             </ButtonSecondary>
           </Link>
@@ -132,19 +133,24 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   const { id } = context.params as { id: string };
 
   try {
-    // Fetch blog content from your Blogger API
-    const response = await axios.get(`https://masudrm.blogspot.com/feeds/posts/default/${id}?alt=json`);
-    const blogContent = response.data.content.$t;
+    const response = await axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/blog/${id}`);
+    const { markdownContent } = response.data;
+
+    if (!markdownContent) {
+      return {
+        notFound: true,
+      };
+    }
 
     // Create a DOMPurify instance
     const window = new JSDOM('').window;
     const DOMPurify = createDOMPurify(window);
 
     // Parse the HTML content
-    const dom = new JSDOM(blogContent);
+    const dom = new JSDOM(markdownContent);
     const document = dom.window.document;
 
-    // Clean up the content as needed
+    // Remove the header and footer elements
     const header = document.querySelector('header');
     const footer = document.querySelector('footer');
     if (header) header.remove();
@@ -161,6 +167,27 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
       firstH1.remove();
     }
 
+    const title = firstH1 ? firstH1.textContent : "Saravanakumar's Blogs";
+
+    // Remove the specific parts of the code
+    const specificPart1 = document.querySelector(
+      '.relative.z-20.mb-8.flex.flex-row.flex-wrap.items-center.justify-center.px-4.md\\:-mt-7.md\\:mb-14.md\\:text-lg.last\\:md\\:mb-10'
+    );
+    if (specificPart1) specificPart1.remove();
+
+    const specificPart2 = document.querySelector(
+      '.mt-6.break-words.px-4.text-center.font-heading.text-3xl.font-bold.text-slate-900.dark\\:text-white.md\\:mt-10.md\\:px-5.md\\:text-4xl.lg\\:px-8.xl\\:px-20.xl\\:text-5xl.mb-8.md\\:mb-14'
+    );
+    if (specificPart2) specificPart2.remove();
+
+    const specificPart3 = document.querySelector('.mb-5.flex.w-full.flex-row.flex-wrap.justify-center.md\\:mb-0');
+    if (specificPart3) specificPart3.remove();
+
+    const specificPart4 = document.querySelector(
+      '.flex.flex-row.items-center.rounded-lg.border.border-slate-300.bg-white.p-4.text-slate-800.shadow-lg.dark\\:border-white.dark\\:bg-slate-800.dark\\:text-slate-300'
+    );
+    if (specificPart4) specificPart4.remove();
+
     // Get the sanitized HTML content
     const htmlContent = DOMPurify.sanitize(document.body.innerHTML);
 
@@ -175,9 +202,9 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     return {
       props: {
         htmlContent,
-        title: blog.title[currentLang] || blog.title.en,
-        date: blog.date[currentLang] || blog.date.en,
-        readTime: blog.read[currentLang] || blog.read.en,
+        title: blog.title.en,
+        date: blog.date.en,
+        readTime: blog.read.en,
         tags: blog.tags,
       },
     };
