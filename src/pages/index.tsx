@@ -12,9 +12,9 @@ import { CardContact } from "../components/CardContact";
 import { Section } from "../styles/styles";
 
 import { Education } from "../components/Education";
-import { Achievements } from "../components/Achievements";
+
 import { Testimonials } from "../components/Testimonials";
-import { Publications } from "../components/Publications";
+
 import { Wakatime } from "../components/Coding/Wakatime";
 import { Certificates } from "../components/Certificates/index";
 import { Work_Experience } from "../components/Work/index";
@@ -54,7 +54,7 @@ export default function Home() {
         <Work_Experience/>
         <Experience />
         
-        <Achievements />
+       
       
         <Certificates />
         <Projects />
@@ -80,5 +80,6 @@ export const getStaticProps: GetStaticProps = async ({ locale = 'en' }) => ({
     ...(await serverSideTranslations(locale, ['common'])),
   },
 });
+
 
 
