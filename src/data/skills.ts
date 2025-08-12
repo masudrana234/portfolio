@@ -41,7 +41,7 @@ const cardSkills = [
       en: 'Unity',
       ta: 'ইউনিটি',
     },
-    img: '/icons/unity.png',
+    img: '/icons/Unity.png',
     color: '#000000'
   },
   {
@@ -50,7 +50,7 @@ const cardSkills = [
       en: 'Github',
       ta: 'গিটহাব',
     },
-    img: '/icons/github.jpg',
+    img: '/icons/Github.png',
     color: '#ffffff'
   },
   {
@@ -95,7 +95,7 @@ const cardSkills = [
       en: 'Adobe Photoshop',
       ta: 'অ্যাডোবি ফটোশপ',
     },
-    img: '/icons/photoshop.png',
+    img: '/icons/PS.png',
     color: '#31A8FF'
   },
   {
@@ -104,7 +104,7 @@ const cardSkills = [
       en: 'Canva',
       ta: 'ক্যানভা',
     },
-    img: '/icons/canva.png',
+    img: '/icons/Canva.png',
     color: '#00C4CC'
   },
   {
@@ -146,3 +146,4 @@ const cardSkills = [
 ]
 
 export default cardSkills
+
