@@ -57,7 +57,7 @@ export default function Home() {
        
       
         <Certificates />
-        <Projects />
+        
         <Wakatime />
         <Testimonials />
         <Jokes />
@@ -80,6 +80,7 @@ export const getStaticProps: GetStaticProps = async ({ locale = 'en' }) => ({
     ...(await serverSideTranslations(locale, ['common'])),
   },
 });
+
 
 
 
