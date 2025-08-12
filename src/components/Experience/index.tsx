@@ -89,10 +89,10 @@ export function Experience() {
                           </Link>
                         </Button>
                         <Button>
-                          <Link legacyBehavior href={exp.link2 ?? ''}>
-                            <a target="_blank">{currentLang === 'ta' ? 'தளம்' : 'Website'}</a>
-                          </Link>
-                        </Button>
+  <Link legacyBehavior href={exp.link ?? ''}>
+    <a target="_blank">{currentLang === 'ta' ? 'தளம்' : 'Website'}</a>
+  </Link>
+</Button>
                       </div>
                       <div>
                         <h3>{currentLang === 'ta' ? 'தொழில்நுட்பங்கள்:' : 'Techs:'}</h3>
@@ -199,3 +199,4 @@ export function Experience() {
   );
 
 }
+
