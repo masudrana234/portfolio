@@ -32,9 +32,9 @@ export function Experience() {
   return (
     <Container>
       <Title>
-        {currentLang === 'ta' ? 'அனுபவம்' : 'Experience'}  
+        {currentLang === 'ta' ? 'অভিজ্ঞতা' : 'Experience'}  
         <span>
-          <Books /> {currentLang === 'ta' ? 'பயிற்சி' : 'Internship'}
+          <Books /> {currentLang === 'ta' ? 'ইন্টার্নিশিপ' : 'Internship'}
         </span>
       </Title>
 
@@ -85,17 +85,17 @@ export function Experience() {
                       <div style={{ display: 'flex', gap: "1rem", marginTop: "1rem", marginBottom: "1rem" }}>
                         <Button>
                           <Link legacyBehavior href={exp.certificate ?? ''}>
-                            <a target="_blank">{currentLang === 'ta' ? 'சான்றிதழ்' : 'Certificate'}</a>
+                            <a target="_blank">{currentLang === 'ta' ? 'সার্টিফিকেট' : 'Certificate'}</a>
                           </Link>
                         </Button>
                         <Button>
                           <Link legacyBehavior href={exp.link2 ?? ''}>
-                            <a target="_blank">{currentLang === 'ta' ? 'தளம்' : 'Website'}</a>
+                            <a target="_blank">{currentLang === 'ta' ? 'ওয়েবসাইট' : 'Website'}</a>
                           </Link>
                         </Button>
                       </div>
                       <div>
-                        <h3>{currentLang === 'ta' ? 'தொழில்நுட்பங்கள்:' : 'Techs:'}</h3>
+                        <h3>{currentLang === 'ta' ? 'টেক:' : 'Techs:'}</h3>
                         <div className="tag">
                           {exp.tags.map(tag => (
                             <Image style={{ margin: '0.2rem' }}
@@ -119,3 +119,4 @@ export function Experience() {
     </Container>
   );
 }
+
