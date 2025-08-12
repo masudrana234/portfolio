@@ -18,42 +18,50 @@ export function Footer() {
   return (
     <FooterContainer>
       <FooterContent>
-        <h4> &copy; {new Date().getFullYear()} Saravanakumar Ramaswamy</h4>
+        <h4> &copy; {new Date().getFullYear()} Masud Rana</h4>
         <div className="footer_links">
-        <Link href={'/privacypolicy'} aria-label={currentLang === 'ta' ? 'தனியுரிமைக் கொள்கை' : 'Privacy Policy'} legacyBehavior>
-          {currentLang === 'ta' ? 'தனியுரிமைக் கொள்கை' : 'Privacy Policy'}
-        </Link>
-        <Link href={'/terms&condition'} aria-label={currentLang === 'ta' ? 'விதிமுறைகள் மற்றும் நிபந்தனைகள்' : 'Terms and Conditions'} legacyBehavior>
-          {currentLang === 'ta' ? 'விதிமுறைகள் மற்றும் நிபந்தனைகள்' : 'Terms and Conditions'}
-        </Link>
+          <Link 
+            href={'/privacypolicy'} 
+            aria-label={currentLang === 'ta' ? 'গোপনীয়তা নীতি' : 'Privacy Policy'} 
+            legacyBehavior
+          >
+            {currentLang === 'ta' ? 'গোপনীয়তা নীতি' : 'Privacy Policy'}
+          </Link>
+          <Link 
+            href={'/terms&condition'} 
+            aria-label={currentLang === 'ta' ? 'শর্তাবলী' : 'Terms and Conditions'} 
+            legacyBehavior
+          >
+            {currentLang === 'ta' ? 'শর্তাবলী' : 'Terms and Conditions'}
+          </Link>
         </div>
       </FooterContent>
       <div className="links">
         <Link
-          href={'https://github.com/Saravanakumar2003'}
+          href={'https://github.com/masudrana234'}
           target="_blank"
-          aria-label={currentLang === 'ta' ? 'கிட்ஹப் இணைப்பு' : 'Link to Github'}
+          aria-label={currentLang === 'ta' ? 'গিটহাব লিংক' : 'Link to Github'}
         >
           <FiGithub />
         </Link>
         <Link
-          href={'https://www.linkedin.com/in/saravanaramaswamy2003/'}
+          href={'https://www.linkedin.com/in/masudrana7'}
           target="_blank"
-          aria-label={currentLang === 'ta' ? 'லிங்க்டின் இணைப்பு' : 'Link to Linkedin'}
+          aria-label={currentLang === 'ta' ? 'লিংকডইন লিংক' : 'Link to Linkedin'}
         >
           <FiLinkedin />
         </Link>
         <Link
-          href={'https://www.instagram.com/saravanakumar.me?utm_source=qr'}
+          href={'https://www.instagram.com/masudrana_rm'}
           target="_blank"
-          aria-label={currentLang === 'ta' ? 'இன்ஸ்டாகிராம்' : 'Instagram'}
+          aria-label={currentLang === 'ta' ? 'ইনস্টাগ্রাম' : 'Instagram'}
         >
           <FiInstagram />
         </Link>
         <Link
-          href={'https://x.com/Saravanakumar16'}
+          href={'https://x.com/masudrana_rm'}
           target="_blank"
-          aria-label={currentLang === 'ta' ? 'ட்விட்டர்' : 'Twitter'}
+          aria-label={currentLang === 'ta' ? 'টুইটার' : 'Twitter'}
         >
           <FiTwitter />
         </Link>
