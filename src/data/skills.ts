@@ -42,7 +42,7 @@ const cardSkills = [
       ta: 'ইউনিটি',
     },
     img: '/icons/unity2.png',
-    color: '#000000'
+    color: '#34A853'
   },
   {
     id: 6,
@@ -146,5 +146,6 @@ const cardSkills = [
 ]
 
 export default cardSkills
+
 
 
