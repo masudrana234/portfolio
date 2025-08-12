@@ -7,7 +7,7 @@ export default function PrivacyPolicy() {
   return (
     <>
       <Head>
-        <title>Privacy Policy | Saravanakumar</title>
+        <title>Privacy Policy | Masud Rana</title>
       </Head>
       <PrivacyPolicyContainer>
         <br/><br/>
@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
 
         <h2>Last Updated: August 7th, 2025</h2>
 
-        <p>Your privacy is important to us. This Privacy Policy explains how Saravanakumar's Portfolio collects, uses, and protects your information when you interact with our website.</p>
+        <p>Your privacy is important to us. This Privacy Policy explains how Masud Rana's Portfolio collects, uses, and protects your information when you interact with our website.</p>
 
         <h3>1. Information We Collect</h3>
         <p>We may collect the following types of information when you use our website:</p>
@@ -78,9 +78,9 @@ export default function PrivacyPolicy() {
 
         <h3>9. Contact Information</h3>
         <p>If you have questions or concerns about this Privacy Policy, contact us at:</p>
-        <p><strong>Saravanakumar R</strong><br />
-          Email: saravanaramaswamy2003@gmail.com<br />
-          Website: <a href="https://saravana.vercel.app">saravana.vercel.app</a>
+        <p><strong>Masud Rana R</strong><br />
+          Email: masudrm50@gmail.com<br />
+          Website: <a href="https://masud7.vercel.app">masud7.vercel.app</a>
         </p>
       </PrivacyPolicyContainer>
       <ScrollTop />
