@@ -1,4 +1,3 @@
-
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,6 +11,9 @@ import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { FaSearch } from "react-icons/fa";
 import { ArrowRight } from "phosphor-react";
 import Github from "../components/Github/Github";
+import { useTranslation } from 'react-i18next';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
 const botkey = process.env.NEXT_PUBLIC_BOTKEY_URL;
 
@@ -21,6 +23,14 @@ interface ProjectsProps {
 
 export default function Projects() {
   const [query, setQuery] = useState("");
+  const { t, i18n } = useTranslation('common');
+  const router = useRouter();
+  const [currentLang, setCurrentLang] = useState<'en' | 'ta'>('en');
+
+  useEffect(() => {
+    const { locale } = router;
+    setCurrentLang(locale as 'en' | 'ta');
+  }, [router.locale]);
 
   const handleChange = (e: ProjectsProps) => {
     setQuery(e.target.value);
@@ -33,42 +43,46 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects | Saravanakumar </title>
+        <title>{currentLang === 'ta' ? 'প্রকল্পসমূহ | মোঃ মাসুদ রানা' : 'Projects | Md. Masud Rana'}</title>
         <meta
           name="description"
-          content="I love to code using tools like React, NextJS, Tailwind, Styled Components and more! Here are some of my favorite projects."
+          content={currentLang === 'ta' 
+            ? 'আমার ব্যবস্থাপনা এবং বিপণন সম্পর্কিত প্রকল্পসমূহ' 
+            : 'My management and marketing related projects'}
         />
-        <meta property="og:title" content="Projects | Saravanakumar" />
+        <meta property="og:title" content={currentLang === 'ta' ? 'প্রকল্পসমূহ | মোঃ মাসুদ রানা' : 'Projects | Md. Masud Rana'} />
         <meta
           property="og:description"
-          content="I love to code using tools like React, NextJS, Tailwind, Styled Components and more! Here are some of my favorite projects."
+          content={currentLang === 'ta' 
+            ? 'আমার ব্যবস্থাপনা এবং বিপণন সম্পর্কিত প্রকল্পসমূহ' 
+            : 'My management and marketing related projects'}
         />
       </Head>
 
       <ScrollTop />
       <T.Section>
         <T.Title>
-          <p>../projects</p>
-          Project Works
+          <p>../{currentLang === 'ta' ? 'প্রকল্পসমূহ' : 'projects'}</p>
+          {currentLang === 'ta' ? 'প্রকল্পের কাজ' : 'Project Works'}
           <span>
-            <HiOutlineDesktopComputer /> Projects
+            <HiOutlineDesktopComputer /> {currentLang === 'ta' ? 'প্রকল্পসমূহ' : 'Projects'}
           </span>
         </T.Title>
         <T.Description>
-          Here you can see some of the work I have done. Feel free to browse and
-          explore the projects to see how they were created, the technologies
-          used, and the features implemented.
+          {currentLang === 'ta' 
+            ? 'এখানে আপনি আমার করা কিছু কাজ দেখতে পাবেন। প্রকল্পগুলি কীভাবে তৈরি করা হয়েছে, ব্যবহৃত প্রযুক্তি এবং বাস্তবায়িত বৈশিষ্ট্যগুলি দেখতে ব্রাউজ করুন এবং অন্বেষণ করুন।' 
+            : 'Here you can see some of the work I have done. Feel free to browse and explore the projects to see how they were created, the technologies used, and the features implemented.'}
         </T.Description>
 
         <S.ProjectsContainer>
           <S.ProjectsContent>
             <div className="search">
-              <p>Search by project name</p>
+              <p>{currentLang === 'ta' ? 'প্রকল্পের নাম অনুসন্ধান করুন' : 'Search by project name'}</p>
 
               <div className="input">
                 <input
                   type="text"
-                  placeholder="Type here..."
+                  placeholder={currentLang === 'ta' ? 'এখানে টাইপ করুন...' : 'Type here...'}
                   value={query}
                   onChange={handleChange}
                 />
@@ -77,7 +91,7 @@ export default function Projects() {
             </div>
 
             {!projectFilter.length && (
-              <h3 className="not-found">Project not found 🙁</h3>
+              <h3 className="not-found">{currentLang === 'ta' ? 'প্রকল্প পাওয়া যায়নি 🙁' : 'Project not found 🙁'}</h3>
             )}
 
             {projectFilter.map((project) => {
@@ -101,7 +115,9 @@ export default function Projects() {
                       </div>
                       <div className="description">
                         <p>{project.description}</p>
-                        <h4 style={{marginBottom:"1rem"}} className="date">Tech Stack:</h4>
+                        <h4 style={{marginBottom:"1rem"}} className="date">
+                          {currentLang === 'ta' ? 'প্রযুক্তি স্ট্যাক:' : 'Tech Stack:'}
+                        </h4>
                         <div className="tags">
                           {project.tech.map((tag) => {
                             return <span key={tag.name}>{tag.name}</span>;
@@ -110,7 +126,7 @@ export default function Projects() {
                       </div>
                       <Link href={`/project/${project.url}`}>
                         <T.ButtonAlternatives>
-                          View Project
+                          {currentLang === 'ta' ? 'প্রকল্প দেখুন' : 'View Project'}
                           <ArrowRight
                             style={{
                               marginBottom: "-0.1rem",
@@ -125,29 +141,29 @@ export default function Projects() {
                 </>
               );
             })}
-
-            
           </S.ProjectsContent>
         </S.ProjectsContainer>
+
         <T.Title>
           <p>../github</p>
-          Github Profile
+          {currentLang === 'ta' ? 'গিটহাব প্রোফাইল' : 'Github Profile'}
           <span>
-            <HiOutlineDesktopComputer /> Stats
+            <HiOutlineDesktopComputer /> {currentLang === 'ta' ? 'পরিসংখ্যান' : 'Stats'}
           </span>
         </T.Title>
         <Github />
         <p className="github">
-              Hey, hey... I have more projects on{" "}
-              <a href="https://github.com/Saravanakumar2003" style={{textDecoration: 'underline',}}> my GitHub </a>
-              !!
+          {currentLang === 'ta' 
+            ? 'আমার আরও প্রকল্প দেখুন ' 
+            : 'Check out more projects on '}
+          <a href="https://github.com/masudrana234" style={{textDecoration: 'underline'}}>
+            {currentLang === 'ta' ? 'আমার গিটহাব' : 'my GitHub'}
+          </a>
+          !!
         </p>
       </T.Section>
       <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
-      <script
-        src={botkey}
-        defer
-      ></script>
+      <script src={botkey} defer></script>
       <Footer />
     </>
   );
