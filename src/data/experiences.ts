@@ -1,22 +1,22 @@
 const experience = [
   {
     id: 1,
-    img: '/experience/interactive-care.png',
+    img: '/icons/ic.png',
     title: {
       en: 'Interactive Care',
-      ta: 'ইন্টারেক্টিভ কেয়ার',
+      bn: 'ইন্টারেক্টিভ কেয়ার',
     },
     subTitle: {
       en: 'Brand Representative',
-      ta: 'ব্র্যান্ড প্রতিনিধি',
+      bn: 'ব্র্যান্ড প্রতিনিধি',
     },
     office: {
       en: 'Marketing and Team Leadership',
-      ta: 'মার্কেটিং এবং টিম নেতৃত্ব',
+      bn: 'মার্কেটিং এবং টিম নেতৃত্ব',
     },
     description: {
-      en: '✯ Developed and executed comprehensive marketing strategies and campaigns aligned with company goals, driving brand growth. \n\n✯ Led a team of 10, fostering collaboration and achieving a 20% increase in sales and engagement. \n\n✯ Utilized digital marketing tools, including SEO and Meta Ads, to enhance online presence. \n\n✯ Created engaging content using Adobe Photoshop, Canva, and Filmora for promotional materials. \n\n✯ Analyzed campaign performance with MS Excel and IBM SPSS to optimize marketing strategies.',
-      ta: '✯ কোম্পানির লক্ষ্যের সাথে সামঞ্জস্যপূর্ণ বিস্তৃত মার্কেটিং কৌশল এবং প্রচারণা তৈরি ও বাস্তবায়ন করেছি, ব্র্যান্ডের বৃদ্ধি ত্বরান্বিত করেছি। \n\n✯ ১০ জনের একটি দলের নেতৃত্ব দিয়েছি, সহযোগিতা বৃদ্ধি করে বিক্রয় ও ব্যস্ততা ২০% বৃদ্ধি করেছি। \n\n✯ অনলাইন উপস্থিতি বাড়াতে এসইও এবং মেটা বিজ্ঞাপন সহ ডিজিটাল মার্কেটিং সরঞ্জাম ব্যবহার করেছি। \n\n✯ প্রচারমূলক উপকরণের জন্য অ্যাডোব ফটোশপ, ক্যানভা এবং ফিলমোরা ব্যবহার করে আকর্ষণীয় সামগ্রী তৈরি করেছি। \n\n✯ মার্কেটিং কৌশল অপ্টিমাইজ করতে এমএস এক্সেল এবং আইবিএম এসপিএসএস ব্যবহার করে প্রচারণার কর্মক্ষমতা বিশ্লেষণ করেছি।',
+      en: '✯ Developed and executed marketing strategies aligned with company goals, driving brand growth. \n\n✯ Led a team of 10, increasing sales and engagement by 20% through effective collaboration. \n\n✯ Utilized SEO and Meta Ads to enhance online presence and campaign reach. \n\n✯ Created engaging promotional content using Adobe Photoshop, Canva, and Filmora. \n\n✯ Analyzed campaign performance with MS Excel and IBM SPSS to optimize strategies.',
+      bn: '✯ কোম্পানির লক্ষ্যের সাথে সামঞ্জস্যপূর্ণ মার্কেটিং কৌশল তৈরি ও বাস্তবায়ন করেছি, ব্র্যান্ডের বৃদ্ধি ত্বরান্বিত করেছি। \n\n✯ ১০ জনের একটি দলের নেতৃত্ব দিয়েছি, কার্যকর সহযোগিতার মাধ্যমে বিক্রয় ও ব্যস্ততা ২০% বৃদ্ধি করেছি। \n\n✯ অনলাইন উপস্থিতি ও প্রচারণার পরিধি বাড়াতে এসইও এবং মেটা বিজ্ঞাপন ব্যবহার করেছি। \n\n✯ অ্যাডোব ফটোশপ, ক্যানভা এবং ফিলমোরা ব্যবহার করে আকর্ষণীয় প্রচারমূলক সামগ্রী তৈরি করেছি। \n\n✯ কৌশল অপ্টিমাইজ করতে এমএস এক্সেল এবং আইবিএম এসপিএসএস দিয়ে প্রচারণার কর্মক্ষমতা বিশ্লেষণ করেছি।',
     },
     tags: [
       { name: 'MS Excel', icon: '/icons/excel.png' },
@@ -29,13 +29,9 @@ const experience = [
     ],
     date: '2023 - 2024',
     link: 'https://www.linkedin.com/in/masudrana7',
-    certificate: 'https://drive.google.com/file/d/1878lxoAvmnTc3zzIb6s4Au1cUINWXtBC/view?usp=drivesdk', // Replace with actual certificate link if available
+    link2: 'https://www.interactivecare.com', // Replace with actual company website if available
+    certificate: 'https://drive.google.com/file/d/1878lxoAvmnTc3zzIb6s4Au1cUINWXtBC/view?usp=drivesdk', // Replace with actual certificate link
   },
 ];
 
-
-
-
-export default experience
-
-
+export default experience;
