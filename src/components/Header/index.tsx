@@ -41,7 +41,7 @@ export function Header() {
               alt="logo"
             />
           </div>
-          {'Masud Rana'}
+          {'Masud Rana's Portfolio Site'}
         </Link>
         <div className="settings">
           <Settings toggleTheme={toggleTheme} currentTheme={currentTheme} />
@@ -131,4 +131,5 @@ export function Header() {
   );
 
 }
+
 
