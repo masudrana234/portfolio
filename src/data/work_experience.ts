@@ -1,7 +1,7 @@
 const work_experience = [
   {
     id: 1,
-    img: '/icons/jnucc.png',
+    img: '/icons/mgtclub.png',
     title: {
       en: 'Management Club, Jagannath University',
       ta: 'ম্যানেজমেন্ট ক্লাব, জগন্নাথ বিশ্ববিদ্যালয়',
