@@ -32,10 +32,10 @@ export function CV() {
               {currentLang === 'ta' ? 'பதிவிறக்க பொத்தானைக் கிளிக் செய்வதன் மூலம் எனது தொழில்முறை சுயவிவரத்தை நீங்கள் பதிவிறக்கம் செய்யலாம்.' : 'Here you can download my professional resume by clicking on the download button.'}
             </p>
             <div className="profile">
-              <img src="https://github.com/Saravanakumar2003.png" alt="Imagem de perfil" />
+              <img src="https://github.com/masudrana234.png" alt="Imagem de perfil" />
               <div className="name">
-                <h3>Saravanakumar R</h3>
-                <span>{currentLang === 'ta' ? 'டெவலப்பர் | பேச்சாளர் | தன்னார்வலர்' : 'Developer | Speaker | Volunteer'}</span>
+                <h3>Masud Rana</h3>
+                <span>{currentLang === 'ta' ? 'ম্যানেজমেন্ট প্রফেশনাল | এপ/ওয়েব ডেভলপার | তথ্য বিশ্লেষক' : 'Management Professional | App/Web Developer | Data Analyst'}</span>
               </div>
             </div>
           </CVDescription>
@@ -52,4 +52,5 @@ export function CV() {
       </CVContainer>
     </Container>
   )
+
 }
