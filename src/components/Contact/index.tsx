@@ -58,7 +58,7 @@ export function Contact() {
         </ContactContent>
         <Form />
         <Title style={{ textAlign: "center" }}>
-          {currentLang === 'ta' ? 'মিটিং সময় ঠিক করুন : 'Schedule a Meeting'}
+          {currentLang === 'ta' ? 'মিটিং সময় ঠিক করুন' : 'Schedule a Meeting'}
         </Title>
         <Description style={{ textAlign: "center", marginTop: "3px" }}>
           {currentLang === 'ta' ? 'இது Calendy மூலம் இயக்கப்படுகிறது. எனவே, ஏற்றுவதற்கு சில நேரம் ஆகலாம். (குறிப்பு: சந்திப்பை திட்டமிட நீங்கள் Calendy குக்கீகளை ஏற்க வேண்டும்)' : 'This is powered by Calendy. Hence, it may take some time for loading. (Note: You have to accept the cookies by Calendy in order to Schedule a meet)'}
@@ -91,3 +91,4 @@ export function Contact() {
   );
 
 }
+
