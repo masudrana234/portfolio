@@ -3,14 +3,14 @@ import Head from "next/head";
 import { About } from "../components/CardAbout";
 import { Header } from "../components/Header";
 import { HomeHero } from "../components/Home";
-import { Projects } from "../components/Projects";
+
 import { Skills } from "../components/Skills";
 import { ScrollTop } from "../components/ScrollTop";
 import { Footer } from "../components/Footer";
 import { Experience } from "../components/Experience";
 import { CardContact } from "../components/CardContact";
 import { Section } from "../styles/styles";
-import { Work } from "../components/Volunteer";
+
 import { Education } from "../components/Education";
 import { Achievements } from "../components/Achievements";
 import { Testimonials } from "../components/Testimonials";
@@ -53,9 +53,9 @@ export default function Home() {
         <Education />
         <Work_Experience/>
         <Experience />
-        <Work />
+        
         <Achievements />
-        <Publications />
+      
         <Certificates />
         <Projects />
         <Wakatime />
@@ -80,4 +80,5 @@ export const getStaticProps: GetStaticProps = async ({ locale = 'en' }) => ({
     ...(await serverSideTranslations(locale, ['common'])),
   },
 });
+
 
