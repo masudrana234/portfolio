@@ -153,7 +153,7 @@ export default function Experience() {
             </TabContent>
           </Tabs>
         </TabsContainer>
-        <Work />
+        
         <Testimonials />
         <Education />
         <Certificates />
@@ -164,4 +164,5 @@ export default function Experience() {
     </div>
   );
 }
+
 
