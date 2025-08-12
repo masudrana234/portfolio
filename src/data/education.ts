@@ -2,7 +2,7 @@ const education = [
   {
     id: 1,
     url: 'jnu',
-    img: '/education/jnu.png', // Replace with your JnU logo path
+        img: '/icons/jnu.png',
     title: {
       en: 'Jagannath University',
       ta: 'জগন্নাথ বিশ্ববিদ্যালয়',
@@ -24,12 +24,12 @@ const education = [
       ta: '২০২০ - বর্তমান',
     },
     link: 'https://www.jnu.ac.bd/',
-    link2: 'https://profile.jnu.ac.bd/10606',
+    link2: '',
   },
   {
     id: 2,
     url: 'rajshahi-college',
-    img: '/education/rajshahi.png', // Replace with Rajshahi College logo path
+    img: '/icons/rc.png',
     title: {
       en: 'Rajshahi College',
       ta: 'রাজশাহী কলেজ',
@@ -56,7 +56,7 @@ const education = [
   {
     id: 3,
     url: 'al-helal',
-    img: '/education/alhelal.png', // Replace with Al Helal logo path
+    img: '/icons/alhelal.png',
     title: {
       en: 'Al Helal Islami Academy & College',
       ta: 'আল হেলাল ইসলামী একাডেমি ও কলেজ',
@@ -77,9 +77,10 @@ const education = [
       en: '2016 - 2017',
       ta: '২০১৬ - ২০১৭',
     },
-    link: '',
+    link: 'https://www.facebook.com/alhelalislamiacademy/',
     link2: '',
   },
 ];
 
 export default education;
+
