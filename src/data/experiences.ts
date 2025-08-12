@@ -4,19 +4,19 @@ const experience = [
     img: '/icons/ic.png',
     title: {
       en: 'Interactive Care',
-      bn: 'ইন্টারেক্টিভ কেয়ার',
+      ta: 'ইন্টারেক্টিভ কেয়ার',
     },
     subTitle: {
       en: 'Brand Representative',
-      bn: 'ব্র্যান্ড প্রতিনিধি',
+      ta: 'ব্র্যান্ড প্রতিনিধি',
     },
     office: {
       en: 'Marketing and Team Leadership',
-      bn: 'মার্কেটিং এবং টিম নেতৃত্ব',
+      ta: 'মার্কেটিং এবং টিম নেতৃত্ব',
     },
     description: {
       en: '✯ Developed and executed marketing strategies aligned with company goals, driving brand growth. \n\n✯ Led a team of 10, increasing sales and engagement by 20% through effective collaboration. \n\n✯ Utilized SEO and Meta Ads to enhance online presence and campaign reach. \n\n✯ Created engaging promotional content using Adobe Photoshop, Canva, and Filmora. \n\n✯ Analyzed campaign performance with MS Excel and IBM SPSS to optimize strategies.',
-      bn: '✯ কোম্পানির লক্ষ্যের সাথে সামঞ্জস্যপূর্ণ মার্কেটিং কৌশল তৈরি ও বাস্তবায়ন করেছি, ব্র্যান্ডের বৃদ্ধি ত্বরান্বিত করেছি। \n\n✯ ১০ জনের একটি দলের নেতৃত্ব দিয়েছি, কার্যকর সহযোগিতার মাধ্যমে বিক্রয় ও ব্যস্ততা ২০% বৃদ্ধি করেছি। \n\n✯ অনলাইন উপস্থিতি ও প্রচারণার পরিধি বাড়াতে এসইও এবং মেটা বিজ্ঞাপন ব্যবহার করেছি। \n\n✯ অ্যাডোব ফটোশপ, ক্যানভা এবং ফিলমোরা ব্যবহার করে আকর্ষণীয় প্রচারমূলক সামগ্রী তৈরি করেছি। \n\n✯ কৌশল অপ্টিমাইজ করতে এমএস এক্সেল এবং আইবিএম এসপিএসএস দিয়ে প্রচারণার কর্মক্ষমতা বিশ্লেষণ করেছি।',
+      ta: '✯ কোম্পানির লক্ষ্যের সাথে সামঞ্জস্যপূর্ণ মার্কেটিং কৌশল তৈরি ও বাস্তবায়ন করেছি, ব্র্যান্ডের বৃদ্ধি ত্বরান্বিত করেছি। \n\n✯ ১০ জনের একটি দলের নেতৃত্ব দিয়েছি, কার্যকর সহযোগিতার মাধ্যমে বিক্রয় ও ব্যস্ততা ২০% বৃদ্ধি করেছি। \n\n✯ অনলাইন উপস্থিতি ও প্রচারণার পরিধি বাড়াতে এসইও এবং মেটা বিজ্ঞাপন ব্যবহার করেছি। \n\n✯ অ্যাডোব ফটোশপ, ক্যানভা এবং ফিলমোরা ব্যবহার করে আকর্ষণীয় প্রচারমূলক সামগ্রী তৈরি করেছি। \n\n✯ কৌশল অপ্টিমাইজ করতে এমএস এক্সেল এবং আইবিএম এসপিএসএস দিয়ে প্রচারণার কর্মক্ষমতা বিশ্লেষণ করেছি।',
     },
     tags: [
       { name: 'MS Excel', icon: '/icons/excel.png' },
@@ -35,3 +35,4 @@ const experience = [
 ];
 
 export default experience;
+
