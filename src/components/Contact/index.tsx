@@ -32,7 +32,7 @@ export function Contact() {
         </span>
       </Title>
       <Description>
-        {currentLang === 'ta' ? 'எனவே நீங்கள் கடினமாக உழைக்கும், உண்மையான மற்றும் நல்ல சவாலுக்கு எப்போதும் தயாராக இருக்கும் ஒருவரைத் தேடுகிறீர்கள் என்றால், உண்மையானவர்களைத் தவிர வேறு எதையும் பார்க்க வேண்டாம்! நாம் இணைந்து எப்படி மாற்றத்தை ஏற்படுத்த முடியும் என்று பார்க்கலாம்:)' : 'So if you are looking for someone hardworking, authentic and always up for a good challenge, look no further than yours truly! Lets connect and see how we can make a difference together:)'}
+        {currentLang === 'ta' ? 'সুতরাং আপনি যদি কঠোর পরিশ্রমী, প্রকৃত এবং সবসময় একটি ভাল চ্যালেঞ্জের জন্য প্রস্তুত কাউকে খুঁজছেন, তাহলে আমার চেয়ে আর কোথাও দেখার দরকার নেই! আসুন যোগাযোগ করি এবং দেখি কীভাবে আমরা একসাথে পরিবর্তন আনতে পারি' : 'So if you are looking for someone hardworking, authentic and always up for a good challenge, look no further than yours truly! Lets connect and see how we can make a difference together:)'}
       </Description>
 
       <ContainerContact>
@@ -41,8 +41,8 @@ export function Contact() {
             <h4>
               <LinkedinLogo size={22} color="#00fffb" /> Linkedin{' '}
             </h4>
-            <Link href="https://www.linkedin.com/in/saravanaramaswamy2003/" target="_blank">
-              <span>saravanaramaswamy2003</span>
+            <Link href="https://www.linkedin.com/in/masudrana7/" target="_blank">
+              <span>masudrana7</span>
             </Link>
           </div>
 
@@ -51,14 +51,14 @@ export function Contact() {
               {' '}
               <TelegramLogo size={22} color="#00fffb" /> Email{' '}
             </h4>
-            <Link href="mailto:saravanaramaswamy2003@gmail.com" target="_blank">
-              <span>saravanaramaswamy2003@gmail.com</span>
+            <Link href="mailto:masudrm50@gmail.com" target="_blank">
+              <span>masudrm50@gmail.com</span>
             </Link>
           </div>
         </ContactContent>
         <Form />
         <Title style={{ textAlign: "center" }}>
-          {currentLang === 'ta' ? 'ஒரு சந்திப்பை திட்டமிடுங்கள்' : 'Schedule a Meeting'}
+          {currentLang === 'ta' ? 'মিটিং সময় ঠিক করুন : 'Schedule a Meeting'}
         </Title>
         <Description style={{ textAlign: "center", marginTop: "3px" }}>
           {currentLang === 'ta' ? 'இது Calendy மூலம் இயக்கப்படுகிறது. எனவே, ஏற்றுவதற்கு சில நேரம் ஆகலாம். (குறிப்பு: சந்திப்பை திட்டமிட நீங்கள் Calendy குக்கீகளை ஏற்க வேண்டும்)' : 'This is powered by Calendy. Hence, it may take some time for loading. (Note: You have to accept the cookies by Calendy in order to Schedule a meet)'}
@@ -73,7 +73,7 @@ export function Contact() {
           ></iframe>
         </ResponsiveIframeContainer>
         <Title style={{ textAlign: "center" }}>
-          {currentLang === 'ta' ? 'எனது நாட்காட்டியைக் காண்க' : 'See my Calendar'}
+          {currentLang === 'ta' ? 'আমার ক্যালেন্ডার দেখুন' : 'See my Calendar'}
         </Title>
         <ResponsiveIframeContainer>
         <iframe
@@ -89,4 +89,5 @@ export function Contact() {
       </ContainerContact>
     </Section>
   );
+
 }
