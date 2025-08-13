@@ -102,8 +102,8 @@ const certificates = [
   {
     id: 1,
     title: {
-      en: 'SoftSkills NPTEL',
-      ta: 'மென்மையான திறன்கள் NPTEL',
+      en: 'Advanced Excel,
+      ta: 'এডভান্সড এক্সচেল',
     },
     subTitle: {
       en: 'Click here to see certificate',
@@ -111,19 +111,20 @@ const certificates = [
     },
     status: {
       en: 'Completed',
-      ta: 'நிறைவு',
+      ta: 'শেষ',
     },
     level: {
-      en: 'October 2022',
-      ta: 'அக்டோபர் 2022',
+      en: 'August 20025',
+      ta: 'আগস্ট ২০২৫',
     },
-    link: 'https://archive.nptel.ac.in/content/noc/NOC22/SEM2/Ecertificates/109/noc22-hs76/Course/NPTEL22HS76S5447196610098361.jpg',
+    link: 'http://ude.my/UC-b460a5f9-1cec-411b-aa92-505cfce8d05a',
     description: {
       en: 'Credentials ID: Nil \n\nSkills Acquired: Communication \n\n',
       ta: 'அங்கீகார ஐடி: இல்லை \n\nபெற்ற திறன்கள்: தொடர்பு \n\n',
     },
-    logo: '/certi/nptel.jpeg',
+    logo: '/certi/excel_certificate.png',
   },
 ];
+
 
 export default certificates;
