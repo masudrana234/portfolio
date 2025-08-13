@@ -132,7 +132,7 @@ export function HomeHero() {
           <h2>
             <Typewriter
               options={{
-                strings: [currentLang === 'ta' ? 'ম্যানেজমেন্ট গ্র্যাজুয়েট | এপ/ওয়েব ডেভেলপার | তথ্য বিশ্লেষক' : 'Management Graduate | App/Web Developer | Data Analysist'],
+                strings: [currentLang === 'ta' ? 'ম্যানেজমেন্ট গ্র্যাজুয়েট | এপ/ওয়েব ডেভেলপার | তথ্য বিশ্লেষক' : 'Management Graduate | App/Web Developer | Data Analyst'],
                 autoStart: true,
                 loop: true,
               }}
