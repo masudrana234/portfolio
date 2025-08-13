@@ -60,11 +60,11 @@ export function Testimonials() {
         frameBorder='0'
       ></iframe>
 
-      <Link href="https://testimonial.to/saravanakumar-r" legacyBehavior>
+      <Link href="https://testimonial.to/masud" legacyBehavior>
         <ButtonAlt style={{
           marginTop: '1rem',
         }}>
-          {currentLang === 'ta' ? 'உங்கள் சான்றுகளை எழுதுங்கள்' : 'Write your Testimonial'}{' '}
+          {currentLang === 'ta' ? 'প্রত্যায়ন পত্র লিখো' : 'Write your Testimonial'}{' '}
           <Heart
             style={{
               marginBottom: '-0.1rem',
@@ -78,5 +78,6 @@ export function Testimonials() {
     </Container>
   );
 }
+
 
 export default Testimonials;
