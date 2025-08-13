@@ -155,8 +155,8 @@ const Settings: React.FC<SettingsProps> = ({ toggleTheme, currentTheme }) => {
         </IconButton>
         {showLanguageOptions && (
           <Dropdown>
-            <IconButton2 onClick={() => changeLanguage('en')}>EN</IconButton2>
-            <IconButton2 onClick={() => changeLanguage('ta')}>TA</IconButton2>
+            <IconButton2 onClick={() => changeLanguage('en')}>En</IconButton2>
+            <IconButton2 onClick={() => changeLanguage('ta')}>Bn</IconButton2>
           </Dropdown>
         )}
         <IconButton onClick={() => setShowFontSizeOptions(!showFontSizeOptions)}>
