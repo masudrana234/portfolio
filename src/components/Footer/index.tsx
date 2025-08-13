@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { FiGithub, FiLinkedin, FiInstagram, FiTwitter } from 'react-icons/fi'
+import { FiGithub, FiLinkedin, FiInstagram, FiTwitter, FiFacebook } from 'react-icons/fi'
 import { FooterContainer, FooterContent } from './styles'
 import { useTranslation } from 'react-i18next'
 import { useRouter } from 'next/router'
@@ -65,7 +65,16 @@ export function Footer() {
         >
           <FiTwitter />
         </Link>
+
+        <Link
+          href={'https://www.facebook.com/masud3.rana'}
+          target="_blank"
+          aria-label={currentLang === 'ta' ? 'ফেইসবুক : 'Facebook'}
+      >
+          <FiFacebook />
+          
       </div>
     </FooterContainer>
   );
 }
+
