@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { HeaderContainer, MobileIcon, NavMenu, Icons } from './styles'
 import { List, X } from 'phosphor-react'
-import { FiGithub, FiLinkedin, FiInstagram } from 'react-icons/fi'
+import { FiGithub, FiLinkedin, FiInstagram, FiFacebook } from 'react-icons/fi'
 import { FaWhatsapp } from 'react-icons/fa'
 import { Button } from '../../styles/styles'
 import { useThemeContext } from '../../context/ThemeContext'
@@ -115,6 +115,14 @@ export function Header() {
             aria-label={currentLang === 'ta' ? 'ইনস্টাগ্রাম' : 'Instagram'}>
             <FiInstagram />
           </Link>
+
+          <Link
+            href={'https://www.facebook.com/masud3.rana'}
+            target="_blank"
+            aria-label={currentLang === 'ta' ? 'ফেইসবুক' : 'Facebook'}>
+            <FiFacebook />
+          </Link>
+          
           <Link
             href={'https://api.whatsapp.com/send?phone=8801308202656'}
             target="_blank"
@@ -127,6 +135,7 @@ export function Header() {
   );
 
 }
+
 
 
 
