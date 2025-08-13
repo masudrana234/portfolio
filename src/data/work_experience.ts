@@ -1,7 +1,7 @@
 const work_experience = [
   {
     id: 1,
-    img: '/icons/mgtclub.png',
+    img: '/icons/mgtclub.jpg',
     title: {
       en: 'Management Club, Jagannath University',
       ta: 'ম্যানেজমেন্ট ক্লাব, জগন্নাথ বিশ্ববিদ্যালয়',
@@ -19,8 +19,8 @@ const work_experience = [
       ta: '✯ বিশ্ববিদ্যালয়ের ইভেন্ট পরিকল্পনা ও বাস্তবায়ন করেছি, সফল ফলাফল নিশ্চিত করতে লজিস্টিকস এবং সময়সূচী সমন্বয় করেছি। \n\n✯ ৮ জনের একটি দলের সাথে সহযোগিতা করে কৌশলগত উদ্যোগ তৈরি করেছি, ক্লাবের ব্যস্ততা ১২% বৃদ্ধি করেছি। \n\n✯ ক্যানভা এবং অ্যাডোব ফটোশপ ব্যবহার করে প্রচারমূলক উপকরণ তৈরি করেছি, ইভেন্টের দৃশ্যমানতা বাড়িয়েছি। \n\n✯ বাজেট ব্যবস্থাপনা এবং ইভেন্ট ট্র্যাকিংয়ের জন্য এমএস এক্সেল ব্যবহার করেছি, দক্ষ সম্পদ বরাদ্দ নিশ্চিত করেছি। \n\n✯ ইভেন্ট প্রচারের জন্য এসইও এবং সোশ্যাল মিডিয়া কৌশল ব্যবহার করেছি, উপস্থিতি ১০% বৃদ্ধি করেছি।',
     },
     tags: [
-      { name: 'Canva', icon: '/icons/canva.png' },
-      { name: 'Adobe Photoshop', icon: '/icons/photoshop.png' },
+      { name: 'Canva', icon: '/icons/Canva.png' },
+      { name: 'Adobe Photoshop', icon: '/icons/PS.png' },
       { name: 'MS Excel', icon: '/icons/excel.png' },
       { name: 'SEO', icon: '/icons/seo.png' },
       { name: 'MS Word', icon: '/icons/word.png' },
