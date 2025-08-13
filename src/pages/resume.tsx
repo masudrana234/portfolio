@@ -37,13 +37,12 @@ export default function Resume() {
   return (
     <>
       <Head>
-        <title>{currentLang === 'ta' ? 'சுயவிவரம் | சரவணகுமார்' : 'Resume | Saravanakumar'}</title>
-        <meta
+        <title>{currentLang === 'ta' ? 'சுயவிவரம் | சரவணகுமார்' : 'Resume | '}</title>
+       <meta
           name="description"
           content={currentLang === 'ta' ? 'இது எனது புதுப்பிக்கப்பட்ட சுயவிவரம், நீங்கள் அதை காணலாம் அல்லது பதிவிறக்கம் செய்யலாம்.' : 'This is my updated resume, you can see or download it.'}
         />
-        <meta property="og:title" content={currentLang === 'ta' ? 'சுயவிவரம் | சரவணகுமார்' : 'Resume | Saravanakumar'} />
-        <meta
+        <meta property="og:title" content={currentLang === 'ta' ? 'சுயவிவரம் | சரவணகுமார்' : 'Resume | Masud Rana'<meta
           property="og:description"
           content={currentLang === 'ta' ? 'இது எனது புதுப்பிக்கப்பட்ட சுயவிவரம், நீங்கள் அதை காணலாம் அல்லது பதிவிறக்கம் செய்யலாம்.' : 'This is my updated resume, you can see or download it.'}
         />
@@ -59,7 +58,7 @@ export default function Resume() {
           </span>
         </Title>
         <Description style={{width:'100%', textAlign: 'center', marginBottom: '1px'}}>
-          {currentLang === 'ta' ? 'இது எனது புதுப்பிக்கப்பட்ட சுயவிவரம், Canva இணையதளத்தால் இயக்கப்படுகிறது. கீழே உள்ள பதிவிறக்க பொத்தானைக் கிளிக் செய்வதன் மூலம் எனது தொழில்முறை சுயவிவரத்தை நீங்கள் பதிவிறக்கம் செய்யலாம்.' : 'This is my updated resume, powered by Canva website. You can download my professional resume by clicking on the download button below.'}
+          {currentLang === 'ta' ? 'இது எனது புதுப்பிக்கப்பட்ட சுயவிவரம், Canva இணையதளத்தால் இயக்கப்படுகிறது. கீழே உள்ள பதிவிறக்க பொத்தானைக் கிளிக் செய்வதன் மூலம் எனது தொழில்முறை சுயவிவரத்தை நீங்கள் பதிவிறக்கம் செய்யலாம்.' : 'This is my updated resumume. You can download my professional resume by clicking on the download button below.'}
         </Description>
 
         <PageSection>
@@ -80,3 +79,4 @@ export default function Resume() {
     </>
   )
 }
+
