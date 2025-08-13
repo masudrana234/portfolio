@@ -22,7 +22,8 @@ const certificates = [
       ta: 'এক্সেল',
     },
     image: '/certi/excel_certificate.png',
-  {
+  },
+    {
     id: 5,
     name: {
       en: 'Leadership skills',
@@ -42,4 +43,5 @@ const certificates = [
 
 
 export default certificates;
+
 
