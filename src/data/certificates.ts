@@ -102,8 +102,8 @@ const certificates = [
   {
     id: 1,
     title: {
-      en: 'Advanced Excel,
-      ta: 'এডভান্সড এক্সচেল',
+      en: 'Advanced Excel',
+      ta: 'এডভান্সড এক্সসেল',
     },
     subTitle: {
       en: 'Click here to see certificate',
@@ -128,3 +128,4 @@ const certificates = [
 
 
 export default certificates;
+
