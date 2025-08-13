@@ -122,12 +122,13 @@ const certificates = [
       en: 'Credentials ID: Nil \n\nSkills Acquired: Microsoft Excel (Advanced) \n\n',
       ta: 'அங்கீகார ஐடி: இல்லை \n\nபெற்ற திறன்கள்: தொடர்பு \n\n',
     },
-    logo: '/certi/excel_certificate.jpg',
+    logo: '/icons/udemy.jpeg',
   },
 ];
 
 
 export default certificates;
+
 
 
 
