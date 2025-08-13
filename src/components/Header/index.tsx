@@ -80,15 +80,11 @@ export function Header() {
             </Link>
           </li>
           <li>
-            <Link href={'/blog'}>
+            <Link href={'https://masudrm.blogspot.com/'}>
               <span>{currentLang === 'ta' ? 'ব্লগ' : 'Blogs'}</span>
             </Link>
           </li>
-          <li>
-            <Link href={'/projects'}>
-              <span>{currentLang === 'ta' ? 'প্রকল্প' : 'Projects'}</span>
-            </Link>
-          </li>
+          
           <li>
             <Link href={'/resume'}>
               <span>{currentLang === 'ta' ? 'রিজিউম' : 'Resume'}</span>
@@ -131,6 +127,7 @@ export function Header() {
   );
 
 }
+
 
 
 
