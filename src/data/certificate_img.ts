@@ -10,26 +10,25 @@ const certificates = [
   {
     id: 2,
     name: {
-      en: 'Microsoft Certified: Azure AI Fundamentals',
-      ta: 'மைக்ரோசாஃப்ட் சான்றளிக்கப்பட்டது: அசூர் ஏஐ அடிப்படைகள்',
+      en: 'Brand Representative',
+        ta: 'ইন্টার্নিশিপ',
     },
-    image: '/certi/AI.png',
+    image: '/certi/ic.png',
   },
   {
     id: 3,
     name: {
-      en: 'Microsoft Certified: Azure Fundamentals',
-      ta: 'மைக்ரோசாஃப்ட் சான்றளிக்கப்பட்டது: அசூர் அடிப்படைகள்',
+      en: 'Interactive Care',
+      ta: 'ইন্টারেকটিভ কেয়ার',
     },
-    image: '/certi/Azure.png',
-  },
+    image: '/certi/ic.png',
   {
     id: 5,
     name: {
-      en: 'Soft Skills',
-      ta: 'மென்மை திறன்',
+      en: 'Leadership skills',
+      ta: 'লিডারশিপ স্কিল,
     },
-    image: '/certi/soft.jpg',
+    image: '/certi/ic.png',
   },
   // {
   //   id: 6,
@@ -40,5 +39,6 @@ const certificates = [
   //   image: '/certi/CS50x.png',
   // },
 ];
+
 
 export default certificates;
