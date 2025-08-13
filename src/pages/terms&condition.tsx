@@ -28,8 +28,8 @@ export default function TermsAndConditions() {
         <p>Masud's Portfolio is based on the project <strong>Evander Inacio Portfolio</strong>, which was originally developed and publicly shared on GitHub by Evander Inacio.</p>
         <p>The project <strong>Evander Inacio Portfolio</strong> is <strong>not open-source</strong>, and its use and distribution are subject to the original creator's terms.</p>
         <p>Special thanks to Evander Inacio for <strong>granting permission to use and build upon his project.</strong> This project has since evolved with numerous enhancements and new features while maintaining proper attribution to the original creator.</p>
-        <p>Modifications and additional features to the site were made by <strong>Saravanakumar R</strong> for personal use and are not intended for redistribution or commercial use without proper authorization.</p>
-        <p><strong>Disclaimer:</strong> The creator of Saravanakumar's Portfolio does not claim ownership of the original "Evander Inacio" project or its intellectual property. All rights to the original code are retained by the original creator.</p>
+        <p>Modifications and additional features to the site were made by <strong>Masud Rana</strong> for personal use and are not intended for redistribution or commercial use without proper authorization.</p>
+        <p><strong>Disclaimer:</strong> The creator of Masud's Portfolio does not claim ownership of the original "Evander Inacio" project or its intellectual property. All rights to the original code are retained by the original creator.</p>
         
         <h3>4. User Responsibilities</h3>
         <p>When using forms or interacting with the website, you agree to:</p>
@@ -65,7 +65,7 @@ export default function TermsAndConditions() {
         <p>For questions about these Terms and Conditions or the original project attribution, contact:</p>
 
         <p><strong>Masud Rana</strong><br />
-          Website: <a href="https://masud7.vercel.app">saravana.vercel.app</a>
+          Website: <a href="https://masud7.vercel.app">masud7.vercel.app</a>
         </p>
       </TermsAndConditionsContainer>
       <ScrollTop />
