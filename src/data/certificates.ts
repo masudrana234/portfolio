@@ -114,7 +114,7 @@ const certificates = [
       ta: 'শেষ',
     },
     level: {
-      en: 'August 20025',
+      en: 'August 2025',
       ta: 'আগস্ট ২০২৫',
     },
     link: 'http://ude.my/UC-b460a5f9-1cec-411b-aa92-505cfce8d05a',
@@ -128,6 +128,7 @@ const certificates = [
 
 
 export default certificates;
+
 
 
 
