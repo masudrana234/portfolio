@@ -69,7 +69,7 @@ export function Footer() {
         <Link
           href={'https://www.facebook.com/masud3.rana'}
           target="_blank"
-          aria-label={currentLang === 'ta' ? 'ফেইসবুক : 'Facebook'}
+          aria-label={currentLang === 'ta' ? 'ফেইসবুক' : 'Facebook'}
       >
           <FiFacebook />
           </Link>
@@ -78,5 +78,6 @@ export function Footer() {
     </FooterContainer>
   );
 }
+
 
 
