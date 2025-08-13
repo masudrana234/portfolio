@@ -21,7 +21,7 @@ const certificates = [
       en: 'MS Excel',
       ta: 'এক্সেল',
     },
-    image: '/certi/excel_certificate.png',
+    image: '/certi/excel_certificate.jpg',
   },
     {
     id: 5,
@@ -43,5 +43,6 @@ const certificates = [
 
 
 export default certificates;
+
 
 
