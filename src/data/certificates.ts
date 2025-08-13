@@ -90,7 +90,7 @@ const certificates = [
     },
     level: {
       en: 'August 2025',
-      ta: 'আগস্ট ২০২৫,
+      ta: 'আগস্ট ২০২৫',
     },
     link: 'https://learn.microsoft.com/api/achievements/share/en-us/masudrana7/W269BH6N?sharingId=AC52D81DFC54FC1E',
     description: {
@@ -128,6 +128,7 @@ const certificates = [
 
 
 export default certificates;
+
 
 
 
