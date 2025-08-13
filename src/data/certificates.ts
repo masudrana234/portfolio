@@ -119,13 +119,14 @@ const certificates = [
     },
     link: 'http://ude.my/UC-b460a5f9-1cec-411b-aa92-505cfce8d05a',
     description: {
-      en: 'Credentials ID: Nil \n\nSkills Acquired: Communication \n\n',
+      en: 'Credentials ID: Nil \n\nSkills Acquired: Microsoft Excel (Advanced) \n\n',
       ta: 'அங்கீகார ஐடி: இல்லை \n\nபெற்ற திறன்கள்: தொடர்பு \n\n',
     },
-    logo: '/certi/excel_certificate.png',
+    logo: '/certi/excel_certificate.jpg',
   },
 ];
 
 
 export default certificates;
+
 
