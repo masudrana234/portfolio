@@ -64,8 +64,8 @@ const certificates = [
       ta: 'நிறைவு',
     },
     level: {
-      en: 'March 2023',
-      ta: 'மார்ச் 2023',
+      en: 'August 2025',
+      ta: 'আগস্ট ২০২৫',
     },
     link: 'https://learn.microsoft.com/api/achievements/share/en-us/masudrana7/3A5CVE9H?sharingId=AC52D81DFC54FC1E',
     description: {
@@ -89,13 +89,13 @@ const certificates = [
       ta: 'நிறைவு',
     },
     level: {
-      en: 'Feb 2023',
-      ta: 'பிப்ரவரி 2023',
+      en: 'August 2025',
+      ta: 'আগস্ট ২০২৫,
     },
     link: 'https://learn.microsoft.com/api/achievements/share/en-us/masudrana7/W269BH6N?sharingId=AC52D81DFC54FC1E',
     description: {
-      en: 'Credentials ID: B3ED2D-F3919B \n\nSkills Acquired: Introduction to AI concept \n\n',
-      ta: 'அங்கீகார ஐடி: B3ED2D-F3919B \n\nபெற்ற திறன்கள்: அசூர் அடிப்படைகள்\n\n',
+      en: 'Credentials ID: \n\nSkillss Acquired: Introduction to AI concept \n\n',
+      ta: 'அங்கீகார ஐடி:  \n\nபெற்ற திறன்கள்: அசூர் அடிப்படைகள்\n\n',
     },
     logo: '/certi/microsoft_logo.jpeg',
   },
@@ -119,8 +119,8 @@ const certificates = [
     },
     link: 'http://ude.my/UC-b460a5f9-1cec-411b-aa92-505cfce8d05a',
     description: {
-      en: 'Credentials ID: Nil \n\nSkills Acquired: Microsoft Excel (Advanced) \n\n',
-      ta: 'அங்கீகார ஐடி: இல்லை \n\nபெற்ற திறன்கள்: தொடர்பு \n\n',
+      en: 'Credentials ID:  \n\nSkillss Acquired: Microsoft Excel (Advanced) \n\n',
+      ta: 'அங்கீகார ஐடி: \n\nபெற்ற திறன்கள்: தொடர்பு \n\n',
     },
     logo: '/icons/udemy.jpeg',
   },
@@ -128,6 +128,7 @@ const certificates = [
 
 
 export default certificates;
+
 
 
 
