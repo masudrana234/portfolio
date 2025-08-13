@@ -1,7 +1,7 @@
 const experience = [
   {
     id: 1,
-    img: '/icons/ic.png',
+    img: '/icons/ic.jpeg',
     title: {
       en: 'Interactive Care',
       ta: 'ইন্টারেক্টিভ কেয়ার',
@@ -21,11 +21,11 @@ const experience = [
     tags: [
       { name: 'MS Excel', icon: '/icons/excel.png' },
       { name: 'IBM SPSS', icon: '/icons/spss.png' },
-      { name: 'Adobe Photoshop', icon: '/icons/photoshop.png' },
-      { name: 'Canva', icon: '/icons/canva.png' },
+      { name: 'Adobe Photoshop', icon: '/icons/PS.png' },
+      { name: 'Canva', icon: '/icons/Canva.png' },
       { name: 'Filmora', icon: '/icons/filmora.png' },
       { name: 'SEO', icon: '/icons/seo.png' },
-      { name: 'Meta Ads', icon: '/icons/meta-ads.png' },
+      { name: 'Meta Ads', icon: '/icons/metaads.png' },
     ],
     date: '2023 - 2024',
     link: 'https://www.linkedin.com/in/masudrana7',
@@ -35,4 +35,5 @@ const experience = [
 ];
 
 export default experience;
+
 
