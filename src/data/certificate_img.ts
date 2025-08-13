@@ -10,23 +10,23 @@ const certificates = [
   {
     id: 2,
     name: {
-      en: 'Brand Representative',
-        ta: 'ইন্টার্নিশিপ',
+      en: 'Management Club',
+        ta: 'ম্যানেজমেন্ট ক্লাব',
     },
-    image: '/certi/ic.png',
+    image: '/certi/mgtclub.png',
   },
   {
     id: 3,
     name: {
-      en: 'Interactive Care',
-      ta: 'ইন্টারেকটিভ কেয়ার',
+      en: 'MS Excel',
+      ta: 'এক্সেল',
     },
-    image: '/certi/ic.png',
+    image: '/certi/excel_certificate.png',
   {
     id: 5,
     name: {
       en: 'Leadership skills',
-      ta: 'লিডারশিপ স্কিল,
+      ta: 'লিডারশিপ স্কিল',
     },
     image: '/certi/ic.png',
   },
@@ -42,3 +42,4 @@ const certificates = [
 
 
 export default certificates;
+
