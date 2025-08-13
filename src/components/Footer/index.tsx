@@ -72,9 +72,11 @@ export function Footer() {
           aria-label={currentLang === 'ta' ? 'ফেইসবুক : 'Facebook'}
       >
           <FiFacebook />
-          
+          </Link>
+      
       </div>
     </FooterContainer>
   );
 }
+
 
