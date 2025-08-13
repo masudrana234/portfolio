@@ -15,7 +15,6 @@ import { Education } from "../components/Education";
 
 import { Testimonials } from "../components/Testimonials";
 
-import { Wakatime } from "../components/Coding/Wakatime";
 import { Certificates } from "../components/Certificates/index";
 import { Work_Experience } from "../components/Work/index";
 import { Jokes } from "../components/Misc/Joke";
@@ -58,7 +57,7 @@ export default function Home() {
       
         <Certificates />
         
-        <Wakatime />
+        
         <Testimonials />
         <Jokes />
         <CardContact />
@@ -80,6 +79,7 @@ export const getStaticProps: GetStaticProps = async ({ locale = 'en' }) => ({
     ...(await serverSideTranslations(locale, ['common'])),
   },
 });
+
 
 
 
