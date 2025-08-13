@@ -67,9 +67,9 @@ const certificates = [
       en: 'March 2023',
       ta: 'மார்ச் 2023',
     },
-    link: 'https://www.credly.com/badges/8e6fd35d-7614-462f-8f2a-af895223de59/linked_in_profile',
+    link: 'https://learn.microsoft.com/api/achievements/share/en-us/masudrana7/3A5CVE9H?sharingId=AC52D81DFC54FC1E',
     description: {
-      en: 'Credentials ID: 59P50A-5A62A6 \n\nSkills Acquired: Azure AI Fundamentals\n\n',
+      en: 'Credentials ID:  \n\nSkills Acquired: Use AI for everyday task\n\n',
       ta: 'அங்கீகார ஐடி: 59P50A-5A62A6 \n\nபெற்ற திறன்கள்: அசூர் ஏஐ அடிப்படைகள்\n\n',
     },
     logo: '/certi/microsoft_logo.jpeg',
@@ -92,9 +92,9 @@ const certificates = [
       en: 'Feb 2023',
       ta: 'பிப்ரவரி 2023',
     },
-    link: 'https://www.credly.com/badges/399438ce-4210-4e08-af50-e9409d1343cf/public_url',
+    link: 'https://learn.microsoft.com/api/achievements/share/en-us/masudrana7/W269BH6N?sharingId=AC52D81DFC54FC1E',
     description: {
-      en: 'Credentials ID: B3ED2D-F3919B \n\nSkills Acquired: Azure Fundamentals\n\n',
+      en: 'Credentials ID: B3ED2D-F3919B \n\nSkills Acquired: Introduction to AI concept \n\n',
       ta: 'அங்கீகார ஐடி: B3ED2D-F3919B \n\nபெற்ற திறன்கள்: அசூர் அடிப்படைகள்\n\n',
     },
     logo: '/certi/microsoft_logo.jpeg',
@@ -128,5 +128,6 @@ const certificates = [
 
 
 export default certificates;
+
 
 
