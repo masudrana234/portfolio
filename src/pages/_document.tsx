@@ -9,7 +9,7 @@ import Document, {
 import { ServerStyleSheet } from 'styled-components'
 
 const meta = {
-  title: 'Md. Masud Rana - Management Graduate & Digital Marketer',
+  title: 'Md. Masud Rana - Management Graduate & Data Analyst',
   description: 'Professional portfolio of Md. Masud Rana showcasing management expertise, marketing skills, and technical capabilities',
   image: 'https://raw.githubusercontent.com/masudrana/Portfolio/main/public/og-image.jpg'
 }
@@ -91,4 +91,5 @@ export default class MyDocument extends Document {
     )
   }
 }
+
 
