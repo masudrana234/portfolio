@@ -11,7 +11,7 @@ import { ServerStyleSheet } from 'styled-components'
 const meta = {
   title: 'Md. Masud Rana - Management Graduate & Digital Marketer',
   description: 'Professional portfolio of Md. Masud Rana showcasing management expertise, marketing skills, and technical capabilities',
-  image: 'https://raw.githubusercontent.com/masudrana/Portfolio/main/public/og-image.png'
+  image: 'https://raw.githubusercontent.com/masudrana/Portfolio/main/public/og-image.jpg'
 }
 
 export default class MyDocument extends Document {
@@ -91,3 +91,4 @@ export default class MyDocument extends Document {
     )
   }
 }
+
